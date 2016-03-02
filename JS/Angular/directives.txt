@@ -1,0 +1,2 @@
+https://docs.angularjs.org/guide/directive
+http://www.undefinednull.com/2014/02/11/mastering-the-scope-of-a-directive-in-angularjs/

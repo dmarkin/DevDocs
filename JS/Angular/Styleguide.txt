@@ -1,0 +1,10 @@
+https://github.com/johnpapa/angular-styleguide
+https://github.com/johnpapa/angular-styleguide/blob/master/i18n/ru-RU.md
+https://github.com/johnpapa/ng-demos - demo project
+
+https://github.com/toddmotto/angular-styleguide
+
+https://builtwith.angularjs.org/
+
+http://todomvc.com/examples/angularjs/#/
+

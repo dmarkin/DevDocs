@@ -1,0 +1,10 @@
+Angular UI - https://angular-ui.github.io, https://github.com/angular-ui/
+Date - https://github.com/angular-ui/ui-date + JQuery Datepicker https://api.jqueryui.com/datepicker/
+
+Translate - https://github.com/ajwhite/angular-translate-once, https://atticuswhite.com/blog/angularjs-translate-once-angular-translate-one-time-binding/
+
+Multiselect - https://github.com/isteven/angular-multi-select
+
+File Upload - https://github.com/danialfarid/ng-file-upload
+
+Interceptors - http://www.bennadel.com/blog/2777-monitoring-http-activity-with-http-interceptors-in-angularjs.htm

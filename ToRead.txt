@@ -1,0 +1,8 @@
+Более 800 ресурсов для front-end-разработчиков - https://m.habrahabr.ru/company/it-grad/blog/275673/
+TODO https://devdactic.com/user-auth-angularjs-ionic/
+TODO http://www.sitepoint.com/creating-crud-app-minutes-angulars-resource/
+Bootstrap templates - http://postovoy.net/84.html
+
+Media Queries - https://habrahabr.ru/post/199424/
+TODO Cheat-sheet- http://ts-soft.ru/blog/angular-cheatsheet
+NodeJS Video - https://www.youtube.com/watch?v=CrevZgTc7ow&list=PLsuEohlthXdkRSxJTkmTstWKHgBHsd3Dx&index=8

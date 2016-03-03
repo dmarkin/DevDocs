@@ -1,2 +1,11 @@
 https://docs.angularjs.org/guide/directive
 http://www.undefinednull.com/2014/02/11/mastering-the-scope-of-a-directive-in-angularjs/
+
+
+
+
+replace: true - заменяет содержание директивы шаблоном из поля template/temaplateUrl (иначе шаблон дописывается в конец директивы)
+
+transclude: true - включает содержимое вложенных элементов директивы
+transclude: 'element' - включает содержимое всех элементов директивы
+Включение происходит в месте шаблона директивы, где указана директива ng-transclude

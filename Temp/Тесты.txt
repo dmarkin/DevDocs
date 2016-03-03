@@ -1,0 +1,23 @@
+﻿http://forum.jscourse.com/t/javascript-core/873
+http://www.ex-designz.net/test_page.asp?tid=45
+https://github.com/h5bp/Front-end-Developer-Interview-Questions
+
+
+Client-side templating (Google Closure Templates / Mustache / Handlebars / Dust.js)
+Progressive Enhancement / Graceful Degradation - 
+
+
+Трансдюсеры, трансшпиллеры
+
+
+Спецификация HTTP/1.1 советует, чтобы браузеры параллельно загружали не более 2-х компонентов веб-страницы с одного хоста.
+Таким образом, если картинки для вашего сайта располагаются на разных хостах, вы получите более 2-х параллельных загрузок.
+А когда загружается скрипт, браузер не будет начинать никаких других загрузок, даже с других хостов.
+
+Алгоритмы сортировки:
+http://mathhelpplanet.com/static.php?p=javascript-algoritmy-sortirovki
+Сортировка строк:
+http://habrahabr.ru/post/127943/
+
+http://forum.jscourse.com/t/zadachka-na-js-asinhronnaya-zagruzka/835
+http://forum.jscourse.com/t/testovoe-zadanie-nuzhen-vzglyad-so-storony/816

@@ -1,0 +1,24 @@
+﻿Инструменты разработчика практически всегда потребляют больше системных ресурсов чем сама страница!
+
+Поиск файлов в каталоге проекта: Ctrl + P
+Поиск в исходном коде: Ctrl + Shift + F
+
+Выбор элементов:
+$() — эквивалентно document.querySelector() - если нет jQuery!
+$$ () — эквивалентно document.querySelectorAll ()
+$0 — $4 — история пяти последних элементов DOM
+
+Другие инструменты консоли:
+https://developer.chrome.com/devtools/docs/commandline-api
+
+Preserve Log на вкладке Console --> результаты будут сохраняться, а не очищаться при каждой загрузке страницы. Это удобно, если нужно просмотреть историю ошибок, которые появляются перед уходом со страницы.
+
+!!! Режим мобильного устройства - иконка смартфона в консоли
+В этом же режиме - эмуляция датчиков!
+
+
+
+
+
+http://css-live.ru/faq/sekrety-brauzernyx-instrumentov-razrabotchika-chast-1.html
+http://css-live.ru/faq/sekrety-brauzernyx-instrumentov-razrabotchika-chast-2.html

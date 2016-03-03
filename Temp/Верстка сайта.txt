@@ -1,0 +1,67 @@
+﻿Разворачивание проекта:
+Рабочее пространство web-dev - http://www.suneco.nl/over-suneco/blog/2014/a-step-by-step-guide-to-setting-up-webstorm-for-front-end-development.aspx
+Скаффолдинг - http://frontender.info/skaffolding-dlya-frontenderov/
+Grunt - http://nano.sapegin.ru/all/grunt-0-4
+Gulp
+
+1. Создание макета
+Подбор цветов - http://colorhunt.co/
+2. Логическая разметка
+3. Написание html кода, определение классов
+4. Шрифты
+5. Цвета
+6. Картинки
+7. Формы
+8. Расположение, позиционировани, отступы
+9. Поведение
+10. Адаптирование верстки для других устройств
+Adaptive (адаптивный) > Responsive (отзывчивый, резиновый, тянущийся)
+Responsive: fluid greeds - гибкие сетки (блоки в %; колонки не менее 300px; тег <meta name="viewport" content="width-device-width">); гибкие изображения (max-width в %), media queries
+контрольные точки:
+max-width: 320px
+max-width: 480px
+max-width: 768px
+max-width: 980px
+max-width: 1200px
+min-width: 1200px
+(min-device-width)
+
+www.mediaqueri.es
+Graceful Degradation 
+Progressive Enhancement (принцип Mobile first!)
+
+Важные элементы - вверху
+
+Adaptive: 
+Адаптация под события мобильных устройств
+
+Тестирование при помощи web-служб или букмарклетов
+
+Форматирование кода
+
+'use strict'
+JSformat (в Webstorm - Ctrl+A, Crtl+Alt+L) или JSLint
+Минимизация
+Вынос в прототип объекта
+Тестирование
+Генерация документации https://github.com/jsdoc3/jsdoc
+Google Speed - https://developers.google.com/speed/pagespeed/insights/
+
+
+Повышение эффективности
+- использование спрайтов
+- минимизация кода
+- ограничение использования JS библиотек и фреймворков
+- ограничение использования CSS greeds
+- кеширование
+
+
+Local Storage - http://diveintohtml5.info/storage.html
+
+Адаптация под IE
+В <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    ...
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->

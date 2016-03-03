@@ -1,0 +1,80 @@
+﻿O'Raily
+Николас Закас JS Оптимизация производительности
+
+Frameworks
+----------
+Mootools
+* AngularJS
+BackboneJS [+MarionetteJS, Chaplin]
+Spine
+* Ember - MVC
+KnockoutJS
+CanJS
+* Dojo
+[Sencha] ExtJS - платный в commerce projects
+KendoUI - платный в commerce projects
+Google Web Toolkit (GWT)
+Yahoo User Interface (YUI)
+Prototype
+
+Реактивные:
+MeteorJS
+SailsJS
+
+RequireJS - для структурирования приложений
+Browserify
+webpack
+
+(Google) Polymer - компонент
+(Mozilla) X-Tags - компонент
+
+
+
+Библиотеки js:
+* ReactJS (компонент)
+Underscore.js
+lodash (fork от Underscore)
+* Modernizr - поддерживает старые браузеры
+moments.js
+Sugar.js
+Async.js
+video.js, mediaelement, jplayer - для работы с видео
+jQuery-File-Upload - для работы с загрузкой файлов
+Guriddo.js, Datatables (for jQuery) - для работы с таблицами
+json3
+select2 - для select boxes
+highcharts, amCharts, Charts.js, Flot - для построения графиков
+winjs
+taskjs
+gmaps.js https://hpneo.github.io/gmaps/examples/map_events.html
+http://d3js.org/
+http://daneden.github.io/animate.css/
+easings.net http://gsgd.co.uk/sandbox/jquery/easing/ - нелинейное
+http://www.webdesignerdepot.com/2015/02/the-best-free-ui-kits-february-2015/ - best UI
+
+Шаблонизаторы
+jQuery tmpl
+Handlebars
+Underscore.js
+lodash
+
+node.js, io.js - платформы для запуска js
+common.js
+
+
+http://todomvc.com
+https://vk.com/feed?w=page-30666517_49656816 - очень краткий обзор
+http://habrahabr.ru/post/118782/ - Backbone
+http://habrahabr.ru/post/127049/ - Backbone
+http://www.webdeveasy.com/angularjs-data-model/ - Angular
+http://hashcode.ru/questions/272470/%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81-%D0%BF%D0%BE-angularjs-%D0%BA%D0%B0%D0%BA-%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C-%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D1%83%D1%8E-%D0%BB%D0%BE%D0%B3%D0%B8%D0%BA%D1%83-%D0%B2-%D1%82%D0%B5%D0%BC%D0%BF%D0%BB%D0%B5%D0%B9%D1%82%D0%B0%D1%85
+http://codepen.io/mlotfi/pen/opHGk
+http://jsfiddle.net/spmbt/hDPqV/
+http://habrahabr.ru/post/179755/ - Angular
+https://thinkster.io/a-better-way-to-learn-angularjs/ - Angular
+http://anton.shevchuk.name/jquery-book/ - jQuery
+http://ianlunn.co.uk/plugins/jquery-parallax/ - jQuery Parallax
+http://api.jqueryui.com/datepicker/ - Datepicker
+https://www.youtube.com/playlist?list=PLYZm5HGThGRBgNFEyXBCyQH1DjONspuwU - jQuery
+http://habrahabr.ru/company/bankrot-pro/blog/230441/ - jQuery Deferred and promise
+http://habrahabr.ru/post/42426/ - jQuery AJAX

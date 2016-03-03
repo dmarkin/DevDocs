@@ -1,0 +1,30 @@
+﻿Package Controle - изменение Theme 
+docs.sublimetext.info
+Синхронизация настроек между компами - sublime.wbond.net/docs/syncing
+Tools -> View in browser
+Множественные курсоры: CTRL+ALT+Up/Down, ALT+F3
+Выделение текущего слова: Ctrl + D
+Разделение экрана
+Горизонтально: ALT+Shift+2/3/4/5
+Вертикально: ALT+Shift+5/8/9
+Закрываем текущий HTML тег: ALT+.
+
+Plugins:
+Simple Print Function - печать
+JavaScriptNext - подсветка в т.ч. ES6
+CSS3
+Поддержка CSS-препроцессоры: SASS, SCSS, Stylus
+CoffeeScript или Better CoffeScript
+TypeScript
+Jade - для node.js
+jQuery, jQuery snippets
+SublimeCodeIntel - autocomplete
+Clickable URLs (по Ctrl+Alt+Enter)
+Terminal
+AutoFileName
+SFTP
+FTP Sync
+View In Browser
+FileDiffs - отличие файлов
+GitGutter
+LiveReload (бесплатный плагин, платная прога) - см. также browsersync.io

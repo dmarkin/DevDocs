@@ -1,0 +1,9 @@
+﻿Тестирование
+TDD - qUnit
+BDD - Jasmine
+Mocha / Karma - test runners for async code
+
+Фистура, Спай?
+
+mocha, chai - тестирование
+http://habrahabr.ru/post/187094/ - Karma

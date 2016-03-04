@@ -21,25 +21,7 @@ $scope используется только внутри контроллеро
 ng-view
 Место, куда грузится 
 
-+ Директивы — это изменение поведения или преобразование модели DOM, связанное с пользовательским атрибутом, именем элемента или css классом. Директивы позволяют расширять HTML синтаксис, в декларативной форме. Не должны содержать бизнес-логику.
-ng-init
-ng-submit
-ng-class - изменяет CSS классом
-ng-href
-ng-model
-ng-repeat='key in Obj'
-ng-include
-ng-switch - аналог switch
-ng-show/ng-hide
-
-function link(scope, iElement, iAttrs, controller, transcludeFn){}
-
-В качестве параметров применяются:
-- scope – область видимости. Будет использоваться директивой для регистрации обработчиков событий (в терминологии angular – watches);
-- iElement – экземпляр элемента, в котором будет использоваться директива;
-- iAttrs – экземпляр атрибутов элемента;
-- ctrl – экземпляр контроллера. Необходимо указывать, если одна из директив элемента, определяет контроллер. Например, в роли контроллера может выступать ngModelController https://docs.angularjs.org/api/ng/type/ngModel.NgModelController
-- transcludeFn – признак трансклюзии.
++
 
 http://iantonov.me/page/sozdanie-direktiv-v-angularjs
 https://makeomatic.ru/blog/2013/08/17/AngularJSAdvanced/

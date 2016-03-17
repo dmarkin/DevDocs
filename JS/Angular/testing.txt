@@ -1,0 +1,4 @@
+!!! в Chrome: angular.element($0).scope() - показывает scope текущего элемента
+
+Unit Tests - Jasmine
+e2e Tests - Protractor https://github.com/angular/protractor

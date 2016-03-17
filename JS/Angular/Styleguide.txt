@@ -8,3 +8,6 @@ https://builtwith.angularjs.org/
 
 http://todomvc.com/examples/angularjs/#/
 
+
+Canceling A Promise In AngularJS
+http://www.bennadel.com/blog/2731-canceling-a-promise-in-angularjs.htm

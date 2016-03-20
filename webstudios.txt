@@ -16,6 +16,7 @@ http://www.swayart.com
 http://atomtonic.com/
 http://startapp-studio.com.ua
 
+Product Development Lifecycle https://en.wikipedia.org/wiki/Product_lifecycle
 Роли в команде
 - Менеджер проекта
 - Технические менеджер
@@ -30,5 +31,8 @@ http://startapp-studio.com.ua
 Сопутствующие услуги
 - Локализация сайтов
 - SEO (оптимизация и продвижение)
+- Тестирование
 - Поддержка сайтов
 - Консалтинг по оптимизации, по бизнес-модели
+
+Уровень стоимости сайтов?

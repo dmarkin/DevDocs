@@ -1,4 +1,15 @@
 !!! в Chrome: angular.element($0).scope() - показывает scope текущего элемента
 
-Unit Tests - Jasmine
+Unit Tests - Jasmine http://jasmine.github.io/2.0/introduction.html
 e2e Tests - Protractor https://github.com/angular/protractor
+
+
+Unit Tests
+Karma (all from root dir)
+Configurate: karma init karma.conf.js (once time)
+Run tests: karma run karma.conf.js / run after each change: karma start karma.conf.js (need to be autoWatch option is true)
+
+e2e Tests
+Run tests:
+webdriver-manager start
+protractor conf.js

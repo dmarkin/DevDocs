@@ -1,2 +1,3 @@
 Methodologies of CSS writing - https://habrahabr.ru/post/256109/
 
+BEM https://ru.bem.info/tutorials/start-with-project-stub/

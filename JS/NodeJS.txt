@@ -1,0 +1,39 @@
+https://www.youtube.com/playlist?list=PLsuEohlthXdkRSxJTkmTstWKHgBHsd3Dx
+Шелли Пауэрса Изучаем Node.js
+http://socket.io/
+
+
+NPM https://www.npmjs.com
+
+http://irisnpm.com - закрытые хранилища
+npm init
+npm add[user]
+npm pu[blish]
+npm s[earch]
+npm i[nstall]
+npm r[emove]
+npm unpublish
+npm up[date] - update all modules
+npm help
+
+
+EventEmitter - основной объект, реализующий работу с событиями
+
+Supervisor
+npm i -g supervisor
+Настроить запуск Run (Node interprete = /usr/local/bin/supervisor)
+supervisor [file.js] (вместо node [file.js])
+
+
+
+Отладка через консоль
+node debug
+
+Отладка через браузер или Webstorm
+Для отладки в Webstorm запускаем node (не supervisor!)
+
+node --debug [--debug-brk] [file.js] - запуск
+
+npm i -g node-inspector (for Chrome)
+
+node-inspector (в новом окне консоли - как экземпляр сервера) - перехватывает команду debugger в коде приложения

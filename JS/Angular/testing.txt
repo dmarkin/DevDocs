@@ -7,7 +7,7 @@ e2e Tests - Protractor https://github.com/angular/protractor
 Unit Tests
 Karma (all from root dir)
 Configurate: karma init karma.conf.js (once time)
-Run tests: karma run karma.conf.js / run after each change: karma start karma.conf.js (need to be autoWatch option is true)
+Run tests: karma run karma.conf.js / run after each change: karma start karma.conf.js (needs to be autoWatch option is true)
 
 e2e Tests
 Run tests:

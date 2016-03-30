@@ -1,3 +1,11 @@
+ECMA Script 2015
+http://dou.ua/lenta/articles/ecmascript-6-is-coming/
+https://github.com/lukehoban/es6features/blob/master/README.md
+
+https://www.youtube.com/watch?v=NI7FY9is62g
+
+
+
 Более 800 ресурсов для front-end-разработчиков - https://m.habrahabr.ru/company/it-grad/blog/275673/
 TODO https://devdactic.com/user-auth-angularjs-ionic/
 TODO http://www.sitepoint.com/creating-crud-app-minutes-angulars-resource/

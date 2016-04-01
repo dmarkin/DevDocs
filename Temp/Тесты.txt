@@ -14,10 +14,6 @@ Progressive Enhancement / Graceful Degradation -
 Таким образом, если картинки для вашего сайта располагаются на разных хостах, вы получите более 2-х параллельных загрузок.
 А когда загружается скрипт, браузер не будет начинать никаких других загрузок, даже с других хостов.
 
-Алгоритмы сортировки:
-http://mathhelpplanet.com/static.php?p=javascript-algoritmy-sortirovki
-Сортировка строк:
-http://habrahabr.ru/post/127943/
 
-http://forum.jscourse.com/t/zadachka-na-js-asinhronnaya-zagruzka/835
+
 http://forum.jscourse.com/t/testovoe-zadanie-nuzhen-vzglyad-so-storony/816

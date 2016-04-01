@@ -8,3 +8,5 @@ Multiselect - https://github.com/isteven/angular-multi-select
 File Upload - https://github.com/danialfarid/ng-file-upload
 
 Interceptors - http://www.bennadel.com/blog/2777-monitoring-http-activity-with-http-interceptors-in-angularjs.htm
+
+ngAnimate - http://www.yearofmoo.com/2013/12/staggering-animations-in-angularjs.html

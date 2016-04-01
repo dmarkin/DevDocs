@@ -1,7 +1,4 @@
-﻿O'Raily
-Николас Закас JS Оптимизация производительности
-
-Frameworks
+﻿Frameworks
 ----------
 Mootools
 * AngularJS
@@ -78,3 +75,4 @@ http://api.jqueryui.com/datepicker/ - Datepicker
 https://www.youtube.com/playlist?list=PLYZm5HGThGRBgNFEyXBCyQH1DjONspuwU - jQuery
 http://habrahabr.ru/company/bankrot-pro/blog/230441/ - jQuery Deferred and promise
 http://habrahabr.ru/post/42426/ - jQuery AJAX
+https://github.com/kriskowal/q - Q

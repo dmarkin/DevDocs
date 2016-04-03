@@ -29,6 +29,7 @@ min-width: 1200px
 (min-device-width)
 
 www.mediaqueri.es
+http://quirktools.com/screenfly - просмотр на различных мониторах
 Graceful Degradation 
 Progressive Enhancement (принцип Mobile first!)
 

@@ -1,7 +1,7 @@
 ﻿Angular UI
 
-
-
+Angular 2
+http://theasder.github.io/learning/2016/02/08/Best-Resources-for-Learning-Angular2-from-Scratch.html
 
 
 

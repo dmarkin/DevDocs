@@ -1,5 +1,5 @@
 http://es6-features.org
-
+http://dou.ua/lenta/articles/ecmascript-6-is-coming/
 
 Классы-коллекции
 Set - списки слов

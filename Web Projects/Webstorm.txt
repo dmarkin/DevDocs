@@ -1,0 +1,4 @@
+Hot keys:
+Quick search everywhere: Shift+Shift
+Navigate to declaration: Ctrl+B (⌘B) or Ctrl+Click (⌘-Click)
+Code completion with replace: Tab

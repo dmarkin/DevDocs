@@ -73,6 +73,3 @@ function jQueryAsyncLoad(ids, load, done) {
         return d;
     })).then(done);
 }
-
-
-

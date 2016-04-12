@@ -15,3 +15,6 @@ npm install karma-[browser]-launcher --save-dev
 
 karma start test/karma.konf.js
 karma run
+
+! Unit Testing Patterns
+https://github.com/Puigcerber/angular-unit-testing

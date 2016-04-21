@@ -1,6 +1,15 @@
-ECMA Script 2015
+ECMA Script 6 (2015)
 http://dou.ua/lenta/articles/ecmascript-6-is-coming/
 https://github.com/lukehoban/es6features/blob/master/README.md
+http://es6-features.org
++ http://dou.ua/lenta/articles/ecmascript-6-is-coming/
+
+ECMA Script 6
+http://tagtree.io/courses/expert-es6/do
+https://github.com/lukehoban/es6features
+http://kangax.github.io/compat-table/es6/
+http://caspervonb.com/javascript/overview-javascript-2015/
+https://www.parleys.com/talk/549eb4b8e4b091b604abd363/chapter4/downloads
 
 https://www.youtube.com/watch?v=NI7FY9is62g
 

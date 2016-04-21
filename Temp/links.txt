@@ -7,7 +7,7 @@ http://learn.javascript.ru
 http://www.w3schools.com/js/default.asp
 http://www.codecademy.com/ [HTML, JS/jQuery]
 http://caniuse.com
-https://developer.mozilla.org/en/learn/javascript - MDN
+https://developer.mozilla.org/eГенерация документации https://github.com/jsdoc3/jsdocn/learn/javascript - MDN
 https://www.youtube.com/user/webformyself/playlists?sort=dd&view=1&shelf_id=0
 http://shamansir.github.io/JavaScript-Garden
 http://habrahabr.ru/post/241776/ - Выразительный JavaScript
@@ -28,8 +28,6 @@ https://github.com/mr-mig/ru-it-chats - русскоязычные чаты пр
 http://www.ibm.com/developerworks/ru/web/ - статьи для разработчиков на IBM
 http://ru.bem.info/ - БЭМ
 
-Node.js & io.js
-https://vk.com/pages?oid=-54530371&p=Node.js
 
 
 HTML
@@ -54,15 +52,7 @@ http://en.wikipedia.org/wiki/Parallax_scrolling - Parallax
 
 ECMA Script 5
 http://es5.javascript.ru/
-http://es6-features.org
-+ http://dou.ua/lenta/articles/ecmascript-6-is-coming/
 
-ECMA Script 6
-http://tagtree.io/courses/expert-es6/do
-https://github.com/lukehoban/es6features
-http://kangax.github.io/compat-table/es6/
-http://caspervonb.com/javascript/overview-javascript-2015/
-https://www.parleys.com/talk/549eb4b8e4b091b604abd363/chapter4/downloads
 
 JS
 js-lessons.github.io/#/ - уроки
@@ -83,12 +73,7 @@ JS Трансдьюсеры, трансшпиллеры
 http://habrahabr.ru/post/237613/
 http://jlongster.com/Transducers.js--A-JavaScript-Library-for-Transformation-of-Data
 
-Useful tools
-https://www.jetbrains.com/webstorm/help - Webstorm Help
-http://www.denwer.ru/ - Denver Server
 
-Grunt, Gulp
-http://nano.sapegin.ru/all/grunt-0-4 - Grunt 0.4
 
 Системы контроля версий (SVN, Git, Mercury)
 Git / Github
@@ -100,7 +85,8 @@ http://habrahabr.ru/post/125799/
 http://habrahabr.ru/post/60030/
 http://habrahabr.ru/post/60347/
 
-CMS
-http://codex.wordpress.org/%D0%94%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD_%D0%97%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0
-
 IE on iOS X http://news.softpedia.com/news/How-to-Run-Internet-Explorer-on-Mac-OS-X-391323.shtml
+
+http://forum.jscourse.com/t/testovoe-zadanie-nuzhen-vzglyad-so-storony/816
+
+http://qalight.com.ua/baza-znanij

@@ -1,6 +1,8 @@
 Hot Keys Mapper (for all apps!) http://waldobronchart.github.io/ShortcutMapper
 http://waldobronchart.github.io/ShortcutMapper/#JetBrainsWebStorm
 
+https://www.jetbrains.com/webstorm/help - Webstorm Help
+
 Hot keys:
 Quick search everywhere: Shift+Shift
 Navigate to declaration: Ctrl+B (⌘B) or Ctrl+Click (⌘-Click)

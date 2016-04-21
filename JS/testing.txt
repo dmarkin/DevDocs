@@ -1,4 +1,5 @@
-﻿Тестирование
+﻿База знаний по тестированию: http://qalight.com.ua/baza-znanij
+Тестирование
 TDD - qUnit
 BDD - Jasmine
 Mocha / Karma - test runners for async code
@@ -18,3 +19,4 @@ karma run
 
 ! Unit Testing Patterns
 https://github.com/Puigcerber/angular-unit-testing
+http://www.sitepoint.com/angular-testing-tips-testing-directives - Directives

@@ -2,6 +2,9 @@ https://www.youtube.com/playlist?list=PLsuEohlthXdkRSxJTkmTstWKHgBHsd3Dx
 Шелли Пауэрса Изучаем Node.js
 http://socket.io/
 
+Node.js & io.js
+https://vk.com/pages?oid=-54530371&p=Node.js
+
 
 NPM https://www.npmjs.com
 

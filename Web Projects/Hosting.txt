@@ -7,3 +7,4 @@ https://help.github.com/articles/using-a-custom-domain-with-github-pages/
 
 Local Servers
 http://www.denwer.ru/ - Denver Server
+http://open-sever.ru/ - Open Server

@@ -1,5 +1,0 @@
-Checklist for project - http://webdevchecklist.com/
-
-Checklist http://theasder.github.io/development/2015/08/19/what-technical-details-should-a-programmer-of-a-web-application-consider-before-making-the-site-public.html
-
-Optimization - https://developers.google.com/speed/pagespeed/insights/

@@ -12,7 +12,10 @@ ng-show/ng-hide
 function link(scope, iElement, iAttrs, controller, transcludeFn) {}
 
 В качестве параметров применяются:
-- scope – область видимости. Будет использоваться директивой для регистрации обработчиков событий (в терминологии angular – watches);
+- scope – область видимости. Будет использоваться директивой для регистрации обработчиков событий (в терминологии angular – watchers):
+   :: create a child scope prototypically inherited with scope: true
+   :: create an isolated scope with scope: {} then you can bind some property to parent scopes with '@', '&', '=' (see this question).
+   :: decide to not create a new scope and use parent with scope: false (default).
 - iElement – экземпляр элемента, в котором будет использоваться директива;
 - iAttrs – экземпляр атрибутов элемента;
 - ctrl – экземпляр контроллера. Необходимо указывать, если одна из директив элемента, определяет контроллер. Например, в роли контроллера может выступать ngModelController https://docs.angularjs.org/api/ng/type/ngModel.NgModelController

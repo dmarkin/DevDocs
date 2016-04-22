@@ -59,3 +59,5 @@ http://quirktools.com/screenfly - просмотр на различных мо�
 10. Установка CMS, заливка проекта на сервер, финальные тесты
 - Тестирование при помощи web-служб или букмарклетов
 - Оптимизация
+- Checklist for project - http://webdevchecklist.com/
+- Checklist http://theasder.github.io/development/2015/08/19/what-technical-details-should-a-programmer-of-a-web-application-consider-before-making-the-site-public.html

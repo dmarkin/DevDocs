@@ -1,0 +1,17 @@
+<head>
+    <script type="text/javascript">
+        function ClearPlaceHolder (input) {
+            if (input.value == input.defaultValue) {
+                input.value = "";
+            }
+        }
+        function SetPlaceHolder (input) {
+            if (input.value == "") {
+                input.value = input.defaultValue;
+            }
+        }
+    </script>
+</head> 
+<body>
+    <input type="text" value="Please fill this field" onfocus="ClearPlaceHolder (this)" onblur="SetPlaceHolder (this)" /> 
+</body>

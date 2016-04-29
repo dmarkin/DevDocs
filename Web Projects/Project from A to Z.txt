@@ -50,7 +50,16 @@ http://quirktools.com/screenfly - просмотр на различных мо�
 
 6. Генерация документации https://github.com/jsdoc3/jsdoc
 
-7. Тестирование QA
+7. Code review. Тестирование QA
+Checklist for code review:
+Function: does it do what it needs to do? (A good spec goes a long way here)
+Bugs
+Test coverage
+Adherence (commitment) to architecture and patterns
+Duplicate code
+Code style and formatting
+
+About code review - https://www.kenneth-truyers.net/2016/04/08/code-reviews-why-and-how/
 
 8. Хостинг
 
@@ -61,3 +70,5 @@ http://quirktools.com/screenfly - просмотр на различных мо�
 - Оптимизация
 - Checklist for project - http://webdevchecklist.com/
 - Checklist http://theasder.github.io/development/2015/08/19/what-technical-details-should-a-programmer-of-a-web-application-consider-before-making-the-site-public.html
+
+11.

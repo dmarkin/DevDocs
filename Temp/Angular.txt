@@ -6,7 +6,9 @@ http://habrahabr.ru/post/181882/ - best practices
 http://habrahabr.ru/company/eastbanctech/blog/242455/ - angular-translate
 https://docs.angularjs.org/api/ng/service/$q - $q
 https://github.com/kriskowal/q/wiki/API-Reference#promisefinallycallback - q
-Angular автоматически скрывает контент, который подгружается через Директивы. При использовании фигурных скобок они могут быть видны в тексте документа. При использовании ng-bind вставки не видны, пока Angular не вычислит нужные значения.
+Angular автоматически скрывает контент, который подгружается через Директивы.
+ При использовании фигурных скобок они могут быть видны в тексте документа.
+  При использовании ng-bind вставки не видны, пока Angular не вычислит нужные значения.
 Собственные директивы указываются в модуле.
 Шаблоны в директивах
 Сначала мы задаём тип шаблона как text/ng-template, чтобы браузер не интерпретировал его текст, как JavaScript. Таким образом можно включать текст шаблонов в файл, а не скачивать его отдельными файлами. Также можно использовать свойство template, когда шаблон хранится в строке. Когда шаблон загружается, Angular сохраняет его, и потом его можно использовать в ng-include и ng-view. В ином случае Angular осуществит GET-запрос файла с шаблоном. Все загруженные шаблоны хранятся в $templateCache в течение всей жизни приложения.
@@ -18,5 +20,5 @@ http://dunmaksim.blogspot.com/2015/04/rest-api-angular-js.html - REST API (Autor
 
 https://github.com/radik/diveintoit-angular/tree/step-08/phonebook
 http://habrahabr.ru/post/221733/ - учебник
-http://jsfiddle.net/achudars/FvLQN/ - табы с использованием jqueryUI
+
 http://campus.codeschool.com/courses/shaping-up-with-angular-js/

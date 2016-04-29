@@ -1,6 +1,7 @@
 https://www.google.com/fonts#
 https://skyfonts.com/
 
+Helvetica, Arial (наиболее распространенные)
 BaskervilleMTStd-Regular
 
 Minion Pro

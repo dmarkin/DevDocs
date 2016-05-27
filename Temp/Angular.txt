@@ -22,3 +22,5 @@ https://github.com/radik/diveintoit-angular/tree/step-08/phonebook
 http://habrahabr.ru/post/221733/ - учебник
 
 http://campus.codeschool.com/courses/shaping-up-with-angular-js/
+
+RESTAngular

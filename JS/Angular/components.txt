@@ -10,3 +10,18 @@ File Upload - https://github.com/danialfarid/ng-file-upload
 Interceptors - http://www.bennadel.com/blog/2777-monitoring-http-activity-with-http-interceptors-in-angularjs.htm
 
 ngAnimate - http://www.yearofmoo.com/2013/12/staggering-animations-in-angularjs.html
+
+Angular Material - https://material.angularjs.org/latest/
+
+Notification Service
+https://github.com/cgross/angular-notify
+https://github.com/alexcrack/angular-ui-notification
+https://github.com/matowens/ng-notify
+https://github.com/l-lin/angular-notifier
+https://github.com/tameraydin/ngToast
+https://github.com/darul75/ng-notification
+
+Table
+https://github.com/esvit/ng-table
+https://github.com/samu/angular-table
+https://github.com/lorenzofox3/Smart-Table

@@ -1,1 +1,3 @@
 Group Inputs - https://github.com/lusever/groupinputs
+
+jQuery Validate - http://jqueryvalidation.org/

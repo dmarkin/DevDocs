@@ -9,3 +9,10 @@ Google Speed - https://developers.google.com/speed/pagespeed/insights/
 - ограничение использования JS библиотек и фреймворков
 - ограничение использования CSS greeds
 - кеширование
+
+Производительность и потребление памяти (Chrome) - chrome://memory-redirect/ or Task Manager at Chrome
+
+Manually run the Javascript garbage collector:
+- Open the Developer Tools (Ctrl+Shift+J)
+- Open the Timeline tab
+- Click on the garbage can icon

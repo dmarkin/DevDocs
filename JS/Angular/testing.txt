@@ -1,7 +1,7 @@
 !!! в Chrome: angular.element($0).scope() - показывает scope текущего элемента
 
 Unit Tests - Jasmine http://jasmine.github.io/2.0/introduction.html
-e2e Tests - Protractor https://github.com/angular/protractor
+e2e Tests - Protractor https://github.com/angular/protractor, http://www.protractortest.org
 
 
 Unit Tests
@@ -13,3 +13,5 @@ e2e Tests
 Run tests:
 webdriver-manager start
 protractor conf.js
+
+http://www.bradoncode.com/blog/2015/07/13/unit-test-promises-angualrjs-q/

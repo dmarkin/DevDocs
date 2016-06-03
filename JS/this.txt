@@ -1,0 +1,16 @@
+Использование thisArg
+
+У некоторых из встроенных методов в ES 5.1 есть специальный аргумент thisArg, который следует использовать везде, где возможно.
+
+var obj = { f: "foo", b: "bar", q: "qux" };
+
+Object.keys( obj ).forEach(function( key ) {
+  // this указывает на `obj`
+  console.log( this[ key ] );
+}, obj ); // <-- Последний аргумент это `thisArg`
+
+// "foo"
+// "bar"
+// "qux"
+
+thisArg может быть использован с Array.prototype.every, Array.prototype.forEach, Array.prototype.some, Array.prototype.map, Array.prototype.filter

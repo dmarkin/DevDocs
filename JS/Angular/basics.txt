@@ -67,3 +67,9 @@ ng-cloak - скрывает элементы DOM во время предвар�
 ! не нужно пихать в $scope то, что не нужно отображать прямо сейчас
 
 Поддержка IE 8 и IE 7: http://docs.angularjs.org/guide/ie
+
+
+http://davidcai.github.io/blog/posts/copy-vs-extend-vs-merge/
+Копия: angular.copy is a deep copy.
+Ссылка: angular.extend(dst, src1, src2, ...) is to shallow copy the properties of the source objects from right to left, all the way to the destination object.
+или angular.merge is an Angular 1.4+ API that is to deep (recursively) copy the properties of the source objects to the destination object.

@@ -1,12 +1,6 @@
 ECMA Script 6 (2015)
-https://github.com/lukehoban/es6features/blob/master/README.md
-http://es6-features.org
-+ http://dou.ua/lenta/articles/ecmascript-6-is-coming/
-
-ECMA Script 6
 http://tagtree.io/courses/expert-es6/do
 https://github.com/lukehoban/es6features
-http://kangax.github.io/compat-table/es6/
 http://caspervonb.com/javascript/overview-javascript-2015/
 https://www.parleys.com/talk/549eb4b8e4b091b604abd363/chapter4/downloads
 
@@ -22,6 +16,9 @@ Bootstrap templates - http://postovoy.net/84.html
 Media Queries - https://habrahabr.ru/post/199424/
 TODO Cheat-sheet- http://ts-soft.ru/blog/angular-cheatsheet
 NodeJS Video - https://www.youtube.com/watch?v=CrevZgTc7ow&list=PLsuEohlthXdkRSxJTkmTstWKHgBHsd3Dx&index=8
+
+
+https://www.smashingmagazine.com/2013/06/workflow-design-develop-modern-portfolio-website/
 
 String:
 

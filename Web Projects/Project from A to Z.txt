@@ -73,3 +73,6 @@ About code review - https://www.kenneth-truyers.net/2016/04/08/code-reviews-why-
 - Checklist http://theasder.github.io/development/2015/08/19/what-technical-details-should-a-programmer-of-a-web-application-consider-before-making-the-site-public.html
 
 11.
+
+Workflow for Portfolio Website
+https://www.smashingmagazine.com/2013/06/workflow-design-develop-modern-portfolio-website/

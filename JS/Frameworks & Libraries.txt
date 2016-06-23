@@ -20,7 +20,11 @@ SailsJS
 
 RequireJS - для структурирования приложений
 Browserify
-webpack
+Webpack
+
+https://gist.github.com/substack/68f8d502be42d5cd4942
+http://mattdesl.svbtle.com/browserify-vs-webpack
+http://blog.namangoel.com/browserify-vs-webpack-js-drama
 
 (Google) Polymer - компонент
 (Mozilla) X-Tags - компонент
@@ -56,7 +60,6 @@ Underscore.js
 lodash
 
 node.js, io.js - платформы для запуска js
-common.js
 
 
 http://todomvc.com
@@ -76,3 +79,21 @@ https://www.youtube.com/playlist?list=PLYZm5HGThGRBgNFEyXBCyQH1DjONspuwU - jQuer
 http://habrahabr.ru/company/bankrot-pro/blog/230441/ - jQuery Deferred and promise
 http://habrahabr.ru/post/42426/ - jQuery AJAX
 https://github.com/kriskowal/q - Q
+
+
+CommonJS синхронно загружает модули. Это важно, потому что если у нас есть три модуля, они будут загружаться один за другим.
+Прекрасно работает на сервере, но, к сожалению, трудно использовать это при написании JavaScript в браузере.
+Достаточно сказать, что чтение модуля из сети занимает гораздо больше времени, чем с диска.
+Во время работы скрипта по загрузке модуля браузер блокируется от запуска чего-нибудь еще, пока не закончится загрузка.
+Он ведет себя так, потому что JavaScript останавливается, пока не будет загружен код.
+
+AMD (Asynchronous Module Definition)
+В отличии от CommonJS, AMD сначала загружает браузер и имеет асинхронное поведение, что позволяет ему выполнить работу.
+AMD модули могут быть объектами, конструкторами, строками, JSON и множеством других типов, в то время как CommonJS
+поддерживает в качестве модулей только объекты.
+AMD не совместим с io, filesystem, и другими ориентированными на сервер функциями, доступными через CommonJS.
+В процессе разработки AMD приложения могут обойтись без стадии сборки файлов воедино
+
+Для объектов, которым требуется поддержка функций AMD и CommonJS, есть еще один вариант: Universal Module Definition (UMD).
+UMD позволяет использовать сразу оба метода и в то же время поддерживать определение глобальных переменных.
+В результате, модули UMD способны работать на клиенте и на сервере.

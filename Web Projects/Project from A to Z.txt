@@ -14,6 +14,11 @@ Webpack
 - Создание UI-кита
 - Для приложений - схематическая прорисовка всех экранов!
 
+2a. Прототипирование
+Pingendo http://pingendo.com/ - The simplest app for Bootstrap prototyping
+
+Web-starter kit - https://github.com/google/web-starter-kit
+
 3. Реализация дизайна (See Quality control.docx!)
 - Логическая разметка
 - Верстка, определение классов

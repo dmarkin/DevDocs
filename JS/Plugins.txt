@@ -1,3 +1,6 @@
 Group Inputs - https://github.com/lusever/groupinputs
 
 jQuery Validate - http://jqueryvalidation.org/
+
+jQuery Input Formatters
+http://jquery-plugins.net/tag/input-format

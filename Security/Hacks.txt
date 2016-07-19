@@ -1,1 +1,3 @@
 http://www.jsfuck.com/
+
+https://developer.mozilla.org/en-US/docs/Web/Security/CSP

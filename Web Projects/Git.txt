@@ -41,3 +41,6 @@ Github Page from existing project:
 at project dir
 git checkout -b gh-pages
 git push origin gh-pages
+
+Rebase
+https://habrahabr.ru/post/161009/

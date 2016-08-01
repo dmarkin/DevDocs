@@ -1,0 +1,89 @@
+
+/* gettext library */
+
+var catalog = new Array();
+
+function pluralidx(n) {
+  var v=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);
+  if (typeof(v) == 'boolean') {
+    return v ? 1 : 0;
+  } else {
+    return v;
+  }
+}
+catalog['Article Title Lookup / Link Text'] = '\u041f\u043e\u0438\u0441\u043a \u0437\u0430\u0433\u043e\u043b\u043e\u0432\u043a\u0430 \u0441\u0442\u0430\u0442\u044c\u0438 / \u0422\u0435\u043a\u0441\u0442 \u0441\u0441\u044b\u043b\u043a\u0438';
+catalog['Attachments'] = '\u041f\u0440\u0438\u043a\u0440\u0435\u043f\u043b\u0451\u043d\u043d\u044b\u0435 \u0444\u0430\u0439\u043b\u044b';
+catalog['Launch'] = '\u0417\u0430\u043f\u0443\u0441\u0442\u0438\u0442\u044c';
+
+
+function gettext(msgid) {
+  var value = catalog[msgid];
+  if (typeof(value) == 'undefined') {
+    return msgid;
+  } else {
+    return (typeof(value) == 'string') ? value : value[0];
+  }
+}
+
+function ngettext(singular, plural, count) {
+  value = catalog[singular];
+  if (typeof(value) == 'undefined') {
+    return (count == 1) ? singular : plural;
+  } else {
+    return value[pluralidx(count)];
+  }
+}
+
+function gettext_noop(msgid) { return msgid; }
+
+function pgettext(context, msgid) {
+  var value = gettext(context + '' + msgid);
+  if (value.indexOf('') != -1) {
+    value = msgid;
+  }
+  return value;
+}
+
+function npgettext(context, singular, plural, count) {
+  var value = ngettext(context + '' + singular, context + '' + plural, count);
+  if (value.indexOf('') != -1) {
+    value = ngettext(singular, plural, count);
+  }
+  return value;
+}
+
+function interpolate(fmt, obj, named) {
+  if (named) {
+    return fmt.replace(/%\(\w+\)s/g, function(match){return String(obj[match.slice(2,-2)])});
+  } else {
+    return fmt.replace(/%s/g, function(match){return String(obj.shift())});
+  }
+}
+
+/* formatting library */
+
+var formats = new Array();
+
+formats['DATETIME_FORMAT'] = 'j E Y \u0433. G:i:s';
+formats['DATE_FORMAT'] = 'j E Y \u0433.';
+formats['DECIMAL_SEPARATOR'] = ',';
+formats['MONTH_DAY_FORMAT'] = 'j F';
+formats['NUMBER_GROUPING'] = '3';
+formats['TIME_FORMAT'] = 'G:i:s';
+formats['FIRST_DAY_OF_WEEK'] = '1';
+formats['TIME_INPUT_FORMATS'] = ['%H:%M:%S', '%H:%M'];
+formats['THOUSAND_SEPARATOR'] = '\u00a0';
+formats['DATE_INPUT_FORMATS'] = ['%d.%m.%Y', '%d.%m.%y', '%Y-%m-%d'];
+formats['YEAR_MONTH_FORMAT'] = 'F Y \u0433.';
+formats['SHORT_DATE_FORMAT'] = 'd.m.Y';
+formats['SHORT_DATETIME_FORMAT'] = 'd.m.Y H:i';
+formats['DATETIME_INPUT_FORMATS'] = ['%d.%m.%Y %H:%M:%S', '%d.%m.%Y %H:%M', '%d.%m.%Y', '%d.%m.%y %H:%M:%S', '%d.%m.%y %H:%M', '%d.%m.%y', '%Y-%m-%d %H:%M:%S', '%Y-%m-%d %H:%M', '%Y-%m-%d'];
+
+function get_format(format_type) {
+    var value = formats[format_type];
+    if (typeof(value) == 'undefined') {
+      return msgid;
+    } else {
+      return value;
+    }
+}

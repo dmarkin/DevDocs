@@ -36,3 +36,5 @@ https://github.com/facebook/flux/tree/master/examples/flux-todomvc
 state относится к компоненту, и именно state однозначно определяет, как будет отрисован компонент.
 За пределы мы выносим не state, а данные, и в нужный момент просто копируем эти данные из store в state.
 props - список параметров, пришедших в компонент извне (от родителя), а state - набор параметров, описывающий внутренее состояние компонента
+
+https://scotch.io/tutorials/learning-react-getting-started-and-concepts

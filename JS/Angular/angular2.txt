@@ -1,2 +1,6 @@
 Angular 2
 http://theasder.github.io/learning/2016/02/08/Best-Resources-for-Learning-Angular2-from-Scratch.html
+
+Видеоуроки
+https://vk.com/wall-30666517_1382573
+http://trank.com.ua/course/angular2udemy

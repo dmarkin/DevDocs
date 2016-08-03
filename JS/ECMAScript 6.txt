@@ -212,6 +212,7 @@ http://frontender.info/es6-classes-final/
 В отличие от функций, определения классов не поднимаются. Причина этого ограничения в том, что классы могут быть наследниками.
 
 Тело класса может содержать только методы, но не свойства.
+Если свойство-значение, всё же, необходимо, то можно создать геттер, который будет нужное значение возвращать.
 
 class Foo {
     constructor(prop) {
@@ -230,6 +231,12 @@ let foo = new Foo(123);
 Foo === Foo.prototype.constructor
 
 Статические методы (или методы класса) являются методами самого Foo
+Как правило, они используются для операций, не требующих наличия объекта (this), например – для фабричных, также статическими удобно делать константы
+class Menu {
+  static get elemClass() {
+    return "menu"
+  }
+}
 
 Прототипные методы Foo являются и свойствами Foo.prototype. Как правило, эти методы и наследуются экземплярами Foo.
 
@@ -239,7 +246,7 @@ class MyClass {
         return 'getter';
     }
     set prop(value) {
-        console.log('setter: '+value);
+        console.log('setter: ' + value);
     }
 }
 
@@ -252,9 +259,123 @@ setter: 123
 Метод-генератор
 Если вы определите метод с «*» в начале, то получите _метод генератор_
 
+Наследование
+class Animal { }
+class Rabbit extends Animal { } // Rabbit - Child, Animal - Parent
+
+alert( Rabbit.prototype.__proto__ == Animal.prototype ); // true
+
+Методы родителя можно переопределить в наследнике. При этом для обращения к родительскому методу используют super.someMethod().
+Конструктор constructor родителя наследуется автоматически. То есть, если в потомке не указан свой constructor, то используется родительский.
+Если же у потомка свой constructor, то, чтобы в нём вызвать конструктор родителя – используется синтаксис super() с аргументами для родителя.
+Для такого вызова есть небольшие ограничения:
+    Вызвать конструктор родителя можно только изнутри конструктора потомка. В частности, super() нельзя вызвать из произвольного метода.
+    В конструкторе потомка мы обязаны вызвать super() до обращения к this. До вызова super не существует this, так как по спецификации в этом случае именно super инициализует this.
+
+class Animal {
+
+  constructor(_name) {
+
+    Object.defineProperty(this, "name", {
+        get: function(){
+            return _name;
+        },
+        set: function(newValue){
+            if(newValue.length > 10){
+                throw new Error('Name max-length error');
+            } else {
+                _name = newValue;
+            }
+        }
+    });
+  }
+
+  showName() {
+    console.log('Animal name is ' + this.name);
+  }
+
+}
+
+class Dog extends Animal{
+    constructor(_name, _age) {
+        super(_name);
+        Object.defineProperty(this, "age", {
+            get: function(){
+                return _age;
+            },
+            set: function(){
+                throw new Error('Property "age" invariant');
+            }
+        });
+      }
+    sayWoof() {
+              console.log('Dog ' + this.name + ' says woof..woof');
+    }
+    showAge() {
+              console.log('Dog ' + this.name + ' age is ' + this.age);
+    }
+}
+
+let barbos = new Dog('barbos', 4);
+
+barbos.showName() // Animal name is barbos
+barbos.sayWoof() // Dog barbos says woof..woof
+barbos.showAge(); //Dog barbos age is 4
+
+// вешаем обработчик при создании и убираем по клику
+class Item {
+    constructor(elem) {
+        this._elem = elem;
+        this._doSomethingHandler = event => this._doSomething(event);
+        elem.addEventListener("click", this._doSomethingHandler, false);
+    }
+    _doSomething(event) {
+        this._elem.removeEventListener("click", this._doSomethingHandler, false);
+        // some code
+    }
+}
+
+Тип данных Symbol
+Новый примитивный тип данных Symbol служит для создания уникальных идентификаторов.
+let sym = Symbol(); // typeof sym == 'symbol'
+Все символы уникальны. Символы с одинаковым именем не равны друг другу.
+У функции Symbol есть необязательный аргумент «имя символа».
+let sym = Symbol("name");
+
+Глобальные символы
+Существует «глобальный реестр» символов, который позволяет, при необходимости, иметь общие «глобальные» символы,
+которые можно получить из реестра по имени.
+Для чтения (или создания, при отсутствии) «глобального» символа служит вызов Symbol.for(имя).
+У вызова Symbol.for, который возвращает символ по имени, есть обратный вызов – Symbol.keyFor(sym).
+Он позволяет получить по глобальному символу его имя
+Symbol.keyFor возвращает undefined, если символ не глобальный
+
+Использование символов
+Символы можно использовать в качестве имён для свойств объекта (оно не является перечислимым)
+свойство-символ недоступно, если обратиться к его названию через точку
+"символьные" свойства объекта игнорируются во время вызова JSON.stringify()
+
+Object.getOwnPropertySymbols - получить все символы объекта
+
 Модули
+Модулем считается файл с кодом. В этом файле ключевым словом export помечаются переменные и функции,
+которые могут быть использованы снаружи. Другие модули могут подключать их через вызов import.
+
 http://webtackles.ru/javascript/js-module-bundling/
-Используйте преобразователь кода (например, Babel или Traceur) для преобразования вашего кода из ES6 в ES5 в любом формате:
+Используйте преобразователь кода (например, Babel или Traceur) для преобразования кода из ES6 в ES5 в любом формате:
 CommonJS, AMD или UMD. Затем пропустите его через упаковщик модулей: Browserify или Webpack, чтобы создать один или несколько
 связанных файлов.
 SystemJS - построен на ES6 загрузчике модулей
+
+!! На текущий момент модули требуют системы сборки на сервере.
+
+Promises
+
+let promise = new Promise(function(resolve, reject) {
+  // maybe do some async stuff in here
+  resolve('result');
+});
+
+Достаточно вызвать resolve, когда обещание выполнено, или вызвать reject, если что-то пошло не так. Также можно сгенерировать исключение.
+Если вы хотите обернуть значение в обещание, которое будет выполнено немедленно, можно просто написать Promise.resolve(value).
+В обратном случае достаточно написать Promise.reject(error).

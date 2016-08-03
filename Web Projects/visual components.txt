@@ -35,3 +35,6 @@ TimelineJS использует Google-таблицы со ссылками на
 http://jsfiddle.net/achudars/FvLQN/ - табы с использованием jqueryUI
 
 http://momentjs.com/ - Dates and Times
+
+TODO
+https://www.sitepoint.com/d3-js-data-visualizations/

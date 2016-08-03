@@ -1,0 +1,26 @@
+Ember JS
+http://emjs.ru
+
+Templating
+http://handlebarsjs.com/
+{{partial 'someTemplate'}} - includes someTemplate.hbs to this placement
+{{outlet}} - placement for deeper level content
+
+Очереди Ember.run.queues
+// => ["sync", "actions", "routerTransitions", "render", "afterRender", "destroy"]
+
+- Очередь sync содержит задачи по синхронизации привязок.
+- Очередь actions выполняет общую работу и обычно содержит запланированные задачи, например, обещания.
+- Очередь routerTransitions включает задачи по переходу в роутере.
+- Очередь render содержит задачи по отображению; обычно они связаны с обновлением DOM.
+- Очередь afterRender включает задачи, которые запускаются после выполнения всех предыдущих запланированных задач по отображению.
+ Для сторонних библиотек, которые предназначены для работы с DOM, это зачастую хорошо,
+  так как их следует запускать только после того, как все дерево DOM обновится.
+- Очередь destroy содержит задачи по завершении удаления объектов, которые согласно другим задачам запланировано убрать.
+
+https://poteto.github.io/component-best-practices/#/
+
+Addons
+http://www.emberaddons.com or http://www.emberobserver.com
+
+Observers will always be called when the value of the emailAddress changes, while the computed property only changes when you go and use that property.

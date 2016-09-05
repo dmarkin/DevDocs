@@ -1,2 +1,5 @@
 15 Best Responsive HTML5 & CSS3 AngularJS Admin Templates To Build Awesome Web Apps 2016
 https://colorlib.com/wp/angularjs-admin-templates/
+
+Flat UI Free - Design Framework
+https://github.com/designmodo/Flat-UI

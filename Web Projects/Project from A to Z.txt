@@ -3,7 +3,10 @@
 Рабочее пространство web-dev - http://www.suneco.nl/over-suneco/blog/2014/a-step-by-step-guide-to-setting-up-webstorm-for-front-end-development.aspx
 Скаффолдинг - http://frontender.info/skaffolding-dlya-frontenderov/
 
-Grunt - http://nano.sapegin.ru/all/grunt-0-4- Grunt 0.4
+Node.js
+npm
+Install all needed packages: npm i -D packageName (ex., imagemin-cli)
+Grunt - http://nano.sapegin.ru/all/grunt-0-4 - Grunt 0.4
 Gulp
 Webpack
 

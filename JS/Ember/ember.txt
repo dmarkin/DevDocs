@@ -1,10 +1,19 @@
 Ember JS
 http://emjs.ru
+https://emberigniter.com/5-essential-ember-2.0-concepts/
+https://habrahabr.ru/post/274637/
+yoember and https://library-app.firebaseapp.com/libraries - Library Example App
 
 Templating
 http://handlebarsjs.com/
+Блочные (blocked) компоненты начинаются с {{#, cтрочные (inline) - с {{ (при этом не используется {{yield}})
 {{partial 'someTemplate'}} - includes someTemplate.hbs to this placement
 {{outlet}} - placement for deeper level content
+{{yield}} - means that we can use this component as a block component;
+    the code that this component wraps around will be injected inside the {{yield}}:
+    {{#library-item item=model}}
+      Closed
+    {{/library-item}} // {{yield}} == Closed
 
 Очереди Ember.run.queues
 // => ["sync", "actions", "routerTransitions", "render", "afterRender", "destroy"]
@@ -22,5 +31,90 @@ https://poteto.github.io/component-best-practices/#/
 
 Addons
 http://www.emberaddons.com or http://www.emberobserver.com
+ember-cp-validations
+ember-cli-d3
+
+Tables
+http://opensource.addepar.com/ember-table/#/overview
+http://offirgolan.github.io/ember-light-table/#/
+https://quantosobra.github.io/ember-data-table-light/
+
+Pagination Example
+https://github.com/toranb/ember-pagination-example
 
 Observers will always be called when the value of the emailAddress changes, while the computed property only changes when you go and use that property.
+
+Routes hooks (called in the below specific order)
+
+import Ember from 'ember';
+export default Ember.Route.extend({
+  init() {},
+
+  beforeModel(transition) {},
+
+  model(params, transition) {},
+
+  afterModel(model, transition) {},
+
+  activate() {},
+
+  setupController(controller, model) {},
+
+  renderTemplate(controller, model) {}
+});
+
+Services
+Когда использовать сервисы?
+Поскольку сервисы - это синглтоны, то их следует использовать только в том случае,
+когда у вас может быть только один экземпляр во всем приложении.
+Например, корзина в интернет-магазине, лента активности, geolocation, logging, session data и Websockets и т.п.
+By convention, the name of the property, which used at component, must match the name of the service being injected.
+start: Ember.inject.service() // will inject service named start
+
+action сначала ищется в контроллере, если там не определена - в роуте
+Data operations (actions) belong in the route!!! [because only the owner of a certain object is allowed to manipulate it]
+Если из action, определенной в контроллере, возвратить return true; --> этот action будет всплывать в route
+Controllers can access other controllers using Ember.inject.controller.
+
+Ember Events in Components
+Ember events in components work by adding the name of the event as a method in the component.
+Touch events: touchStart, touchMove, touchEnd, touchCancel
+Keyboard events: keyDown, keyUp, keyPress
+Mouse events: mouseDown, mouseUp, contextMenu, click, doubleClick, mouseMove, focusIn, focusOut, mouseEnter, mouseLeave
+Form events: submit, change, focusIn, focusOut, input
+HTML5 drag and drop events: dragStart, drag, dragEnter, dragLeave, dragOver, dragEnd, drop
+Custom events can be registered using the Ember.Application.customEvents method.
+
+Components
+How to send actions from a parent to child component?
+You can use closure actions or the send method to trigger actions from parent routes or controllers.
+See Cookbook p.287
+
+Components by default are isolated from their surroundings. Any data that the component needs must be passed in.
+
+Initializers
+// app/initializer/init
+
+export function initialize(app) {
+app.inject('component', 'start', 'service:start'); // this injects start service into all the components at the app
+}
+
+export default {
+name: 'init',
+initialize
+};
+
+Ember.js initializers are created when the application is started. It’s a good place to preload data or set up
+the application state. The app argument, in the initialize function, is also known as Ember.Application.
+It serves as a registry for dependency declaration. Factories (classes) can be registered and injected into the application.
+The service:start is the key for the start service that we created earlier. Once a factory is registered,
+it can be injected anywhere in the application. As the start service has already been created, there is no need to register it.
+The app.inject takes three arguments. The first is the type to be injected. The second is the name of the service, start.
+Finally, the service:start factory is created.
+
+Dependency Injection and implementation with contextual components due to the use of the component and hash helpers
+https://emberway.io/component-dependency-injection-in-ember-js-a46a39a5d30a#.dyxe54dqe
+
+Auth
+https://github.com/simplabs/ember-simple-auth#what-does-it-do
+https://github.com/simplabs/ember-simple-auth/blob/master/guides/managing-current-user.md

@@ -14,7 +14,7 @@ Webpack
 - Подбор цветов - http://colorhunt.co/
 - Подбор шрифтов
 - Размеры и расположение
-- Создание UI-кита
+- Создание UI-kit
 - Для приложений - схематическая прорисовка всех экранов!
 
 2a. Прототипирование
@@ -38,6 +38,10 @@ max-width: 980px
 max-width: 1200px
 min-width: 1200px
 (min-device-width)
+
+https://github.com/stylelint/stylelint - линтинг, валидация CSS
+https://github.com/morishitter/stylefmt - линтинг и форматирование CSS
+https://github.com/hudochenkov/postcss-sorting - сортировка свойств CSS
 
 www.mediaqueri.es
 http://quirktools.com/screenfly - просмотр на различных мониторах

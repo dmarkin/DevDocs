@@ -41,3 +41,14 @@ https://www.sitepoint.com/d3-js-data-visualizations/
 
 Tables
 https://datatables.net/
+
+Salvattore - masonry card design plugin for jQuery
+https://github.com/rnmp/salvattore
+
+Snippets for Bootstrap
+http://bootsnipp.com/
+
+Hint by CSS
+https://github.com/chinchang/hint.css
+
+<img src="http://placehold.it/300x240"> - вставляет блок с указанным размером вместо картинки

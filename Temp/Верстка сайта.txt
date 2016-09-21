@@ -11,3 +11,14 @@ JSformat (в Webstorm - Ctrl+A, Crtl+Alt+L) или JSLint
 
 
 Local Storage - http://diveintohtml5.info/storage.html
+
+Deprecated in HTML5
+ <input>
+Authors should not, specify the maxlength and size attributes on input elements whose type attributes are in the Number state.
+
+ <center> use css instead
+ <basefont> use css instead
+ <big> use css instead
+ <font> use css instead
+ <nobr> use css instead
+ <tt> use css instead

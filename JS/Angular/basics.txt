@@ -1,3 +1,6 @@
+See https://scotch.io/tutorials/build-an-etsy-clone-with-angular-and-stamplay-part-1like example
+See https://www.sitepoint.com/real-time-status-update-app-angularjs-firebase/ example
+
 ng-app
 Для директивы ngApp можно указать дополнительный атрибут – имя модуля, который будет загружен при инициализации приложения.
 

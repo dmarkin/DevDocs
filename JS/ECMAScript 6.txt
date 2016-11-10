@@ -18,6 +18,8 @@ const
 массив или объект сразу нескольким переменным, разбив его на части.
 
 spread (...) -  должно стоять только последним элементом в списке слева
+https://rainsoft.io/how-three-dots-changed-javascript/
+
 'use strict';
 
 let [firstName, lastName, ...rest] = "Юлий Цезарь Император Рима".split(" ");
@@ -77,9 +79,11 @@ function showName(firstName, lastName, ...rest)
 Заметим, что rest – настоящий массив, с методами map, forEach и другими, в отличие от arguments.
 
 Ex.
-Math.max(...numbers);
-    is the same as
-Math.max.apply(Math, numbers);
+Math.max(...numbers); // the same as Math.max.apply(Math, numbers);
+
+let countries = ['Moldova', 'Ukraine'];
+let otherCountries = ['USA', 'Japan'];
+countries.push(...otherCountries); // the same as countries.push.apply(countries, otherCountries);
 
 ! В свойстве name у функции находится её имя.
 let f = function g() {}; имеем f.name === g, g.name === undefined
@@ -98,7 +102,7 @@ let inc = x => {return x + 1};
    Отсутствие у функции-стрелки "своего this" влечёт за собой естественное ограничение: такие функции нельзя использовать в качестве конструктора, то есть нельзя вызывать через new.
    Поиск this в ней осуществляется выше в замыкании.
 - Функции-стрелки не имеют своего arguments
-   В качестве arguments используются аргументы внешней «обычной» функции.
+   В качестве arguments используются аргументы внешней «обычной» (нестрелочной) функции.
 
 Сохранение внешнего this и arguments удобно использовать для форвардинга вызовов и создания декораторов.
 

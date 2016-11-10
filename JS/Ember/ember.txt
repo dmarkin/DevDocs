@@ -1,4 +1,7 @@
 Ember JS
+Convention over configuration is an important philosphy in Ember.
+Data Down, Actions Up
+
 http://emjs.ru
 https://ember-twiddle.com/
 https://emberigniter.com/5-essential-ember-2.0-concepts/
@@ -15,6 +18,9 @@ http://handlebarsjs.com/
     {{#library-item item=model}}
       Closed
     {{/library-item}} // {{yield}} == Closed
+
+http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_component
+
 
 Очереди Ember.run.queues
 // => ["sync", "actions", "routerTransitions", "render", "afterRender", "destroy"]
@@ -42,6 +48,9 @@ https://quantosobra.github.io/ember-data-table-light/
 
 Pagination Example
 https://github.com/toranb/ember-pagination-example
+
+Auth
+https://github.com/simplabs/ember-simple-auth
 
 Observers will always be called when the value of the emailAddress changes, while the computed property only changes when you go and use that property.
 

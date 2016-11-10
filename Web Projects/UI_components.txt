@@ -51,4 +51,14 @@ http://bootsnipp.com/
 Hint by CSS
 https://github.com/chinchang/hint.css
 
+Animated Scroll
+https://github.com/usablica/kissui.scrollanim
+https://github.com/terwanerik/ScrollTrigger
+
+Auto-hided Header (CSS, JS)
+http://freebiesbug.com/code-stuff/auto-hiding-header-css-jquery/
+
+Custom Radiobuttons
+https://github.com/zhiyul/Switch
+
 <img src="http://placehold.it/300x240"> - вставляет блок с указанным размером вместо картинки

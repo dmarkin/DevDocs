@@ -1,5 +1,12 @@
 RactiveJS
 Flux — это термин, придуманный для обозначения однонаправленного потока данных с очень специфичными событиями и слушателями.
+https://github.com/enaqx/awesome-react
+
+
+https://facebook.github.io/flux/docs/todo-list.html
+https://www.sitepoint.com/how-to-build-a-todo-app-using-react-redux-and-immutable-js/
+http://code.tutsplus.com/courses/build-a-microblogging-app-with-flux-and-react
+
 
 1. Ваши представления отправляют события
 Dispatcher по своей сути является event-системой. Он траслирует события и регистрирует колбэки. Есть только один глобальный dispatcher.

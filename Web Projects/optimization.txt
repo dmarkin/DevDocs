@@ -19,3 +19,4 @@ Manually run the Javascript garbage collector:
 
 Netling https://github.com/hallatore/Netling load tester client
 Websurge http://websurge.west-wind.com/
+https://github.com/GoogleChrome/lighthouse

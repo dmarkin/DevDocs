@@ -32,7 +32,6 @@ http://ru.bem.info/ - БЭМ
 
 HTML
 http://htmlbook.ru
-http://frontender.info/a-guide-to-flexbox/#svoystva - Flexbox
 http://www.hongkiat.com/blog/rwd-tools/ - Responsive
 
 CSS

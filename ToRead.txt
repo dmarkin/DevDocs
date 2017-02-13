@@ -17,6 +17,13 @@ Media Queries - https://habrahabr.ru/post/199424/
 TODO Cheat-sheet- http://ts-soft.ru/blog/angular-cheatsheet
 NodeJS Video - https://www.youtube.com/watch?v=CrevZgTc7ow&list=PLsuEohlthXdkRSxJTkmTstWKHgBHsd3Dx&index=8
 
+http://jasonwatmore.com/post/2014/05/26/AngularJS-Basic-HTTP-Authentication-Example.aspx
+http://plnkr.co/edit/H4SVl6?p=preview
+http://thesassway.com/beginner/getting-started-with-sass-and-compass
+http://jordanhollinger.com/2014/01/29/css-gaussian-blur-behind-a-translucent-box/
+http://www.awwwards.com/best-websites/chocolat-milano/
+http://www.clicktorelease.com/code/css3dclouds/
+
 
 https://www.smashingmagazine.com/2013/06/workflow-design-develop-modern-portfolio-website/
 

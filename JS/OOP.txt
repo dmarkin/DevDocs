@@ -1,11 +1,33 @@
-Парадигмы ООП
+Парадигмы ООП:
 
-Инкапсуляция (Сокрытие типов данных, сокрытие членов структуры - модификаторы, сокрытие частей программных систем)
-Наследование
-Полиморфизм
-Абстракция
-Посылка сообщений
-Повторное использование
+- Инкапсуляция (Сокрытие типов данных, сокрытие членов структуры - модификаторы, сокрытие частей программных систем)
+- Наследование
+Example:
+function A(type){
+this.type = type;
+this.x = 10;
+};
+A.prototype.getType = function(){return this.type};
+A.prototype.getX = function(){return this.x};
+
+function B(type){}; //Наследуем класс А используя prototype
+var b = Object.create(new A()); // именно так, а не B.prototype = new A(); var b = new B('cool');
+b.x // 10 - назначеное A
+b.type // cool
+
+function C(type){
+    A.call(this, type);
+    //При вызове С через new создается новый объект (this),
+    //A назначает ему свойства x и type, но не ставит __proto__, так как не вызвана через New
+};
+var c = new C("cool");
+c.x // 10;
+c.type // cool
+
+- Полиморфизм
+- Абстракция
+- Посылка сообщений
+- Повторное использование
 
 SOLID - five basic principles of object-oriented programming and design
 

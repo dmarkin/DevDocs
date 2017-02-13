@@ -1,7 +1,9 @@
 http://es6-features.org
 http://es6katas.org/ - обучалка с тестами
 http://www.es6fiddle.net/ - примеры использования
-http://kangax.github.io/compat-table/es6/ - совместимость
+http://kangax.github.io/compat-table/es5/ - совместимость ES5
+http://kangax.github.io/compat-table/es6/ - совместимость ES6
+http://kangax.github.io/compat-table/es2016plus/ - совместимость ES2016+
 + http://dou.ua/lenta/articles/ecmascript-6-is-coming/
 
 

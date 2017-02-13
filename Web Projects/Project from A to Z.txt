@@ -29,11 +29,15 @@ Web-starter kit - https://github.com/google/web-starter-kit
 - Поведение (JavaScript Effect)
 
 3a. Адаптирование верстки для различных устройств
+Разные подходы: либо две разные версии сайтов для mobile и desktop устройств, либо отзывчивый дизайн
 Adaptive (адаптивный, фиксированные размеры и компоновка) > Responsive (отзывчивый, резиновый, тянущийся, относительные размеры и компоновка)
 Responsive: fluid greeds - гибкие сетки (блоки в %; колонки не менее 300px;
  тег <meta name="viewport" content="width=device-width,initial-scale=1">);
- гибкие изображения (max-width в %), media queries
-контрольные точки:
+ гибкие изображения (max-width в % либо картинки вписываем в блоки с шириной в % и задаем max-width: 100%;), media queries
+ (для совместимости со старыми браузерами, не использующими mediaqueries, используем: respond.js, css3-mediaqueries.js);
+ шрифты для малых экранов: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, Helvetica, sans-serif;
+
+Контрольные точки для media queries:
 max-width: 320px
 max-width: 480px
 max-width: 768px
@@ -65,6 +69,9 @@ http://jonibologna.com/flexbox-cheatsheet/
 4. JavaScript Functionality
 - Адаптация под события мобильных устройств!
 - Тестирование (в т.ч. TDD, BDD)
+
+http://labjs.com, http://headjs.com - динамические подгрузчики скриптов в зависимости от начальных условий просмотра [аналог Webpack?]
+https://www.filamentgroup.com/code/ - библиотеки для адаптирования сайтов
 
 5. Установка счетчиков и виджетов, SEO, форматирование кода, минимизация, углификация
 

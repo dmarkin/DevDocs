@@ -17,6 +17,7 @@ git branch // all branches
 git branch -d [branch] // delete branch (only from another branch!)
 git fetch // позволяет прежде чем сделать pull, посмотреть обновления
 git merge, git rebase - для объединения двух веток, в которых были сделаны изменения
+git remote // удаленный репо
 
 git help
 

@@ -1,0 +1,18 @@
+http://frontender.info/using-svg/
+
+1. Вставка как картинки
+<img src="kiwi.svg" alt="Киви на овале">
+SVG работает везде, кроме IE до 8 версии и браузерах на Android до версии 2.3.
+
+2. Вставка через background-image
+<a href="/" class="logo">Kiwi Corp</a>
+
+.logo {
+     display: block;
+     text-indent: -9999px;
+     width: 100px;
+     height: 82px;
+     background: url(kiwi.svg);
+     /* Эти размеры прописаны с учётом соотношения сторон изображения в оригинале. Можно использовать значение contain */
+     background-size: 100px 82px;
+   }

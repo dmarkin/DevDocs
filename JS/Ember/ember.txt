@@ -1,4 +1,6 @@
 Ember JS
++https://github.com/eoinkelly/ember-runloop-handbook
+
 Convention over configuration is an important philosphy in Ember.
 Data Down, Actions Up
 
@@ -33,6 +35,8 @@ http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_component
  Для сторонних библиотек, которые предназначены для работы с DOM, это зачастую хорошо,
   так как их следует запускать только после того, как все дерево DOM обновится.
 - Очередь destroy содержит задачи по завершении удаления объектов, которые согласно другим задачам запланировано убрать.
+
+run.schedule, run.scheduleOnce, run.once create a new runloop if one does not exist and that these automatically (implicitly) created runloops are called autoruns.
 
 https://poteto.github.io/component-best-practices/#/
 
@@ -114,6 +118,26 @@ name: 'init',
 initialize
 };
 
+!? Отключаем runloop для некоторых браузерных событий
+/**
+ * Tell Ember to stop listening for certain events. These events are very
+ * frequent so they make it harder to visualise what the runloop is doing. Feel
+ * free to adjust this list by adding/removing events. The full list of events
+ * that Ember listens for by default is at
+ * http://emberjs.com/api/classes/Ember.View.html#toc_event-names
+ *
+ */
+Ember.Application.initializer({
+  name: 'Stop listening for overly noisy mouse events',
+
+  initialize(container, application) {
+    let events = container.lookup('event_dispatcher:main').events;
+    delete events.mousemove;
+    delete events.mouseenter;
+    delete events.mouseleave;
+  }
+});
+
 Ember.js initializers are created when the application is started. It’s a good place to preload data or set up
 the application state. The app argument, in the initialize function, is also known as Ember.Application.
 It serves as a registry for dependency declaration. Factories (classes) can be registered and injected into the application.
@@ -128,3 +152,20 @@ https://emberway.io/component-dependency-injection-in-ember-js-a46a39a5d30a#.dyx
 Auth
 https://github.com/simplabs/ember-simple-auth#what-does-it-do
 https://github.com/simplabs/ember-simple-auth/blob/master/guides/managing-current-user.md
+
+Actions
+
+<button {{action "sayHi" preventDefault=false bubble=false on="double-click"}}>Salute</button>
+По умолчанию регистрирует обработчик события (указанного в on) и выполняет его при возникновении события; event передается в первом аргументе sayHi
+preventDefault - по умолчанию true
+bubble - по умолчанию true
+on - событие, по умолчанию Click / Enter
+
+<button onclick={{action "sayHi"}}></button>
+Closure Action в качестве обработчика события
+Создает функцию с замыканием, которая вызывает другую функцию. Только закрепляет (bind) текущий контекст и привязывает аргументы.
+ Не создает обработчиков, не имеет preventDefault и bubble свойств.
+
+
+{{my-button action=(action "sayHi")}}
+Closure Action - event передается во втором(!) аргументе sayHi

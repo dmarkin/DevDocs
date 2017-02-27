@@ -5,6 +5,7 @@ http://kangax.github.io/compat-table/es5/ - совместимость ES5
 http://kangax.github.io/compat-table/es6/ - совместимость ES6
 http://kangax.github.io/compat-table/es2016plus/ - совместимость ES2016+
 + http://dou.ua/lenta/articles/ecmascript-6-is-coming/
++ https://habrahabr.ru/post/305900/#18
 
 
 Переменные let:
@@ -15,6 +16,13 @@ http://kangax.github.io/compat-table/es2016plus/ - совместимость ES
 const
 - Объявление const задаёт константу, то есть переменную, которую нельзя изменить
 - Если в константу присвоен объект (это возможно!), то от изменения защищена сама константа, но не свойства внутри неё
+
+    const ARR = [5, 6];
+    ARR.push(7);
+    console.log(ARR); // [5,6,7]
+    ARR = 10; // TypeError
+    ARR[0] = 3; // значение можно менять
+    console.log(ARR); // [3,6,7]
 
 Деструктуризация (destructuring assignment) – это особый синтаксис присваивания, при котором можно присвоить
 массив или объект сразу нескольким переменным, разбив его на части.

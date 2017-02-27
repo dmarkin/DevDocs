@@ -22,6 +22,8 @@ do {
 
 Алгоритмы сортировки:
 http://mathhelpplanet.com/static.php?p=javascript-algoritmy-sortirovki
+быстрая, пирамидальная, слиянием
+
 Сортировка строк:
 http://habrahabr.ru/post/127943/
 

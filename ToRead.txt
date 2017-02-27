@@ -9,12 +9,19 @@ https://www.parleys.com/talk/549eb4b8e4b091b604abd363/chapter4/downloads
 
 
 Более 800 ресурсов для front-end-разработчиков - https://m.habrahabr.ru/company/it-grad/blog/275673/
-TODO https://devdactic.com/user-auth-angularjs-ionic/
-TODO http://www.sitepoint.com/creating-crud-app-minutes-angulars-resource/
+
+https://devdactic.com/user-auth-angularjs-ionic/
+Cheat-sheet- http://ts-soft.ru/blog/angular-cheatsheet
+Впечатление от Angular http://vas3k.ru/blog/348/
+http://www.sitepoint.com/creating-crud-app-minutes-angulars-resource/
+http://metanit.com/web/angular/
+https://makeomatic.ru/blog/2013/12/11/AngularJS_VS_jQuery/
+https://makeomatic.ru/blog/2014/04/04/Initialization_angularjs/
+https://github.com/angular/angular-seed - см. тестирование
+
 Bootstrap templates - http://postovoy.net/84.html
 
 Media Queries - https://habrahabr.ru/post/199424/
-TODO Cheat-sheet- http://ts-soft.ru/blog/angular-cheatsheet
 NodeJS Video - https://www.youtube.com/watch?v=CrevZgTc7ow&list=PLsuEohlthXdkRSxJTkmTstWKHgBHsd3Dx&index=8
 
 http://jasonwatmore.com/post/2014/05/26/AngularJS-Basic-HTTP-Authentication-Example.aspx

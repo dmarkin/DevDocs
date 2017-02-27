@@ -95,10 +95,14 @@ $watch
 $watchGroup - для массивов
 $watchCollection - для массивов (hashes) и объектов
 
+События Angular
 $scope.$on('eventName', function () {}); - вешает обработчик (Listener) на событие eventName
 
 <button ng-click="$emit('eventName')"></button> - отправляет событие eventName на всплытие
 <button ng-click="$broadcast('eventName')"></button> - отправляет событие eventName на погружение
+
+В реальной жизни события наиболее полезны, когда надо соединить несколько областей видимости.
+Cобытия нужно использовать, когда вы ожидаете изменения Вида в ответ на событие, а сервисы – когда Виды не меняются.
 
 Последовательная асинхронная инициализация Angular.JS приложений с использованием промисов
 https://makeomatic.ru/blog/2014/04/04/Initialization_angularjs/

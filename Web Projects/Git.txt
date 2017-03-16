@@ -1,4 +1,15 @@
-﻿git config --global user.name 'dmarkin'
+﻿Системы контроля версий (SVN, Git, Mercury)
+Git / Github
+http://githowto.com/ru/making_changes
+https://try.github.io/levels/1/challenges/1
+https://www.youtube.com/watch?v=RiYz59qVypg
+https://www.youtube.com/watch?v=5d7OcL_bQjI
+http://habrahabr.ru/post/125799/
+http://habrahabr.ru/post/60030/
+http://habrahabr.ru/post/60347/
+
+
+git config --global user.name 'dmarkin'
 git config --global user.email dmarkin@ua.fm // all configs saves at .gitconfig file
 git config --list // shows all configs
 git init // creates git dir at project

@@ -7,3 +7,6 @@ Card UX - http://say-hi.me/design/kak-usovershenstvovat-ux-s-pomoshhyu-kartochno
 
 Material Design Lite
 https://getmdl.io/started/
+
+Retina graphics
+Способы оптимизации графики для retina-экранов - https://habrahabr.ru/post/150071/

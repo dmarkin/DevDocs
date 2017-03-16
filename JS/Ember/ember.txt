@@ -1,12 +1,12 @@
 Ember JS
 +https://github.com/eoinkelly/ember-runloop-handbook
+https://emberigniter.com/5-essential-ember-concepts/
 
 Convention over configuration is an important philosphy in Ember.
 Data Down, Actions Up
 
 http://emjs.ru
 https://ember-twiddle.com/
-https://emberigniter.com/5-essential-ember-2.0-concepts/
 https://habrahabr.ru/post/274637/
 yoember and https://library-app.firebaseapp.com/libraries - Library Example App
 
@@ -154,6 +154,7 @@ https://github.com/simplabs/ember-simple-auth#what-does-it-do
 https://github.com/simplabs/ember-simple-auth/blob/master/guides/managing-current-user.md
 
 Actions
++ http://miguelcamba.com/blog/2016/01/24/ember-closure-actions-in-depth/
 
 <button {{action "sayHi" preventDefault=false bubble=false on="double-click"}}>Salute</button>
 По умолчанию регистрирует обработчик события (указанного в on) и выполняет его при возникновении события; event передается в первом аргументе sayHi
@@ -169,3 +170,43 @@ Closure Action в качестве обработчика события
 
 {{my-button action=(action "sayHi")}}
 Closure Action - event передается во втором(!) аргументе sayHi
+
+Extracting values out of the first argument
+<input type="text" onchange={{action "logArgs"}}> <!-- Logs `[event]` -->
+<input type="text" onchange={{action "logArgs" value="target.value"}}> <!-- Logs the value of the input (e.target.input) -->
+<button onclick={{action "logArgs" "abcde" value="length"}}> <!-- Logs `[5]` -->
+<button onclick={{action (action "logArgs" "foo" value="length") value="screenX"}}>Press me</button> <!-- Logs `[3, 741]` -->
+
+mut helper
+<button onclick={{action (mut shipmentType) "next-day"}}>Next day delivery</button>
+    is equivalent for
+<button onclick={{action "selectShipmentType" "next-day"}}>Next day delivery</button>
+actions: {
+  selectShipmentType(type /*, e */) {
+    this.set('shipmentType', type);
+  }
+}
+
+
+Best Components Practices [https://poteto.github.io/component-best-practices]:
+1. Don't declare arrays or objects directly on Components.
+Instead, add them on init. This is so we can ensure that each instance of the Component has its own independent state.
+
+2. When overrriding framework methods (or extended Component methods), call this._super(...arguments);
+
+3. Observers make things less explicit, and are generally less performant.
+
+5. Use closure actions
+
+6. Follow the Data Down, Actions Up philosophy
+When architecting components, always find out who owns the data.
+ Only objects that "own" the data should be allowed to mutate it. In most cases, this will either be the controller or route.
+
+7. you should not modify a component's internal or external properties inside of the {will,did}{Render,Update} hooks.
+ This will cause performance degradation and potentially an infinite loop.
+ Instead, use the did{init,receive,update}Attrs hooks
+
+8. When routable components land, singleton logic will no longer live in a controller. Instead, we can move them to services.
+
+9. Helpers are great for intermediate values and other composable bits of functionality,
+ particularly when they don't require their own element.

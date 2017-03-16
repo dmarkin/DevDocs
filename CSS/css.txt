@@ -4,6 +4,8 @@ BEM https://ru.bem.info/tutorials/start-with-project-stub/
 
 SASS vs LESS vs Stylus - http://forwebdev.ru/css/sass-vs-less-vs-stylus/
 
+Selectors - http://dev.w3.org/csswg/selectors-3/#class-html
+
 Центрирование по вертикали и горизонтали
 .modal {
   position: fixed;

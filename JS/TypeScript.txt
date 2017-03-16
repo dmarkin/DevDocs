@@ -3,3 +3,5 @@ https://vk.com/away.php?to=http%3A%2F%2Ftypescript-lang.ru%2Fdocs%2F&post=687809
 
 «TypeScript Deep Dive», Basarat Ali Syed
 https://basarat.gitbooks.io/typescript/content/docs/getting-started.html
+
+https://medium.com/javascript-scene/you-might-not-need-typescript-or-static-types-aa7cb670a77b#.einat18wv

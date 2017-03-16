@@ -24,6 +24,37 @@ var c = new C("cool");
 c.x // 10;
 c.type // cool
 
+Наследование с помощью Object.create():
+// Shape - superclass
+function Shape() {
+  this.x = 0;
+  this.y = 0;
+}
+
+// superclass method
+Shape.prototype.move = function(x, y) {
+  this.x += x;
+  this.y += y;
+  console.info('Shape moved.');
+};
+
+// Rectangle - subclass
+function Rectangle() {
+  Shape.call(this); // call super constructor.
+}
+
+// subclass extends superclass
+Rectangle.prototype = Object.create(Shape.prototype);
+Rectangle.prototype.constructor = Rectangle;
+
+var rect = new Rectangle();
+
+console.log('Is rect an instance of Rectangle?',
+  rect instanceof Rectangle); // true
+console.log('Is rect an instance of Shape?',
+  rect instanceof Shape); // true
+rect.move(1, 1); // Outputs, 'Shape moved.'
+
 - Полиморфизм
 - Абстракция
 - Посылка сообщений
@@ -45,3 +76,6 @@ Interface segregation principle
 
 Dependency inversion principle
     one should “Depend upon Abstractions. Do not depend upon concretions.”
+
+Конструкторы
+Which functions can be constructors - all used with new (https://css-tricks.com/understanding-javascript-constructors/)

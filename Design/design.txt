@@ -10,3 +10,7 @@ https://getmdl.io/started/
 
 Retina graphics
 Способы оптимизации графики для retina-экранов - https://habrahabr.ru/post/150071/
+
+Translucent card design - https://byeolbit.github.io/translucent
+
+Parallax Blocks with hover animation - https://github.com/gijsroge/tilt.js

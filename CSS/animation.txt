@@ -1,2 +1,4 @@
 CSS эффекты нажатия - http://webtoks.ru/css/css-effekty-nazhatiya/#imageclose-925
 CSS эффекты нажатия - http://tympanus.net/Development/ClickEffects/
+
+jQuery DrawSVG - анимационные эффекты для SVG

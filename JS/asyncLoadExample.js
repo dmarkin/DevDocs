@@ -16,6 +16,10 @@
 // Преимущество асинхронных запросов перед синхронными в том, что можно получить данные, не блокируя интерфейс
 // (точнее, основной поток выполнения программы).
 
+// when working with async functions based on callbacks:
+//     1. Never call the callback twice.
+//     2. Never throw an error.
+
 'use strict';
 
 var idsArr,

@@ -1,0 +1,19 @@
+Test common principles
+1. Find your Component Contract first
+2. Decide which constraints are worth testing and which aren’t
+3. Prop types are not worth testing
+4. Inline styles are usually not worth testing
+5. The components you render and what props you give them are important to test
+6. Don’t test things that are not the concern of your component
+
+
+Cheat sheet that outlines the concerns of most React components:
+
+What do I do with the props I receive?
+What components do I render? What do I pass to those components?
+Do I ever keep anything in state? If so, do I invalidate it when receiving new props? When do I update state?
+If a user interacts with me or a child component calls a callback I passed to it, what do I do?
+Does anything happen when I’m mounted? When I’m unmounted?
+
+https://medium.freecodecamp.org/the-right-way-to-test-react-components-548a4736ab22
+Enzyme http://airbnb.io/enzyme/ + Jest https://facebook.github.io/jest/

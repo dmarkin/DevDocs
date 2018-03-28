@@ -1,0 +1,1 @@
+Vuejs 2 Authentication Tutorial https://auth0.com/blog/vuejs2-authentication-tutorial/

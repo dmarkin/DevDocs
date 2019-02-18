@@ -21,3 +21,32 @@ Manually run the Javascript garbage collector:
 Netling https://github.com/hallatore/Netling load tester client
 Websurge http://websurge.west-wind.com/
 https://github.com/GoogleChrome/lighthouse
+
+Алгоритмическая оптимизаиця:
+Производительность O(1)
+Производительность O(log n), напр. Бинарный поиск
+Производительность O(n) - подозрительно
+Cycles
+array.indexOf
+array.lastIndexOf
+array.splice
+array.includes
+array.reverse
+array.every
+array.find
+array.some
+array.findIndex
+array.reduce
+array.reduceRight
+Object.values
+Object.keys
+
+Методы, выделяющие память
+array.slice
+array.concat
+array.map
+array.filter
+str.split
+
+Производительность O(n2) - переписать на O(n*log n) (напр., сначала отсортировать массив)
+

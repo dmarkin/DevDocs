@@ -604,3 +604,121 @@ ownKeys – перехватывает обращения к методу getOwn
 
 ECMAScript 2016 / 2017
 https://leanpub.com/exploring-es2016-es2017/read
+
+
+Kinds of Access
+Assume a class Foo probably derived from some other class(es) with probably more classes derived from it.
+
+Then accessing
+
+from static method/getter of Foo
+some probably overridden static method/getter:
+this.method()
+this.property
+some probably overridden instance method/getter:
+impossible by design
+own non-overridden static method/getter:
+Foo.method()
+Foo.property
+own non-overridden instance method/getter:
+impossible by design
+from instance method/getter of Foo
+some probably overridden static method/getter:
+this.constructor.method()
+this.constructor.property
+some probably overridden instance method/getter:
+this.method()
+this.property
+own non-overridden static method/getter:
+Foo.method()
+Foo.property
+own non-overridden instance method/getter:
+not possible by intention unless using some workaround:
+Foo.prototype.method.call( this )
+Object.getOwnPropertyDescriptor( Foo.prototype,"property" ).get.call(this);
+Keep in mind that using this isn't working this way when using arrow functions or invoking methods/getters explicitly bound to custom value.
+
+Background
+When in context of an instance's method or getter
+this is referring to current instance.
+super is basically referring to same instance, but somewhat addressing methods and getters written in context of some class current one is extending (by using the prototype of Foo's prototype).
+definition of instance's class used on creating it is available per this.constructor.
+When in context of a static method or getter there is no "current instance" by intention and so
+this is available to refer to the definition of current class directly.
+super is not referring to some instance either, but to static methods and getters written in context of some class current one is extending.
+
+class A {
+  constructor( input ) {
+    this.loose = this.constructor.getResult( input );
+    this.tight = A.getResult( input );
+    console.log( this.scaledProperty, Object.getOwnPropertyDescriptor( A.prototype, "scaledProperty" ).get.call( this ) );
+  }
+
+  get scaledProperty() {
+    return parseInt( this.loose ) * 100;
+  }
+
+  static getResult( input ) {
+    return input * this.scale;
+  }
+
+  static get scale() {
+    return 2;
+  }
+}
+
+class B extends A {
+  constructor( input ) {
+    super( input );
+    this.tight = B.getResult( input ) + " (of B)";
+  }
+
+  get scaledProperty() {
+    return parseInt( this.loose ) * 10000;
+  }
+
+  static get scale() {
+    return 4;
+  }
+}
+
+class C extends B {
+  constructor( input ) {
+    super( input );
+  }
+
+  static get scale() {
+    return 5;
+  }
+}
+
+class D extends C {
+  constructor( input ) {
+    super( input );
+  }
+
+  static getResult( input ) {
+    return super.getResult( input ) + " (overridden)";
+  }
+
+  static get scale() {
+    return 10;
+  }
+}
+
+
+let instanceA = new A( 4 );
+console.log( "A.loose", instanceA.loose );
+console.log( "A.tight", instanceA.tight );
+
+let instanceB = new B( 4 );
+console.log( "B.loose", instanceB.loose );
+console.log( "B.tight", instanceB.tight );
+
+let instanceC = new C( 4 );
+console.log( "C.loose", instanceC.loose );
+console.log( "C.tight", instanceC.tight );
+
+let instanceD = new D( 4 );
+console.log( "D.loose", instanceD.loose );
+console.log( "D.tight", instanceD.tight );

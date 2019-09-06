@@ -8,5 +8,4 @@ Progressive Enhancement (принцип Mobile first!)
 'use strict'
 JSformat (в Webstorm - Ctrl+A, Crtl+Alt+L) или JSLint
 
-
 Local Storage - http://diveintohtml5.info/storage.html

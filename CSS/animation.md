@@ -6,7 +6,8 @@ jQuery DrawSVG - анимационные эффекты для SVG
 Анимация и кривые Безье
 http://cubic-bezier.com
 
-transition: left 5s cubic-bezier(0, .5, .5, 1);
+```transition: left 5s cubic-bezier(0, .5, .5, 1);```
+
 Существует несколько стандартных обозначений кривых:
  linear (ровное движение), ease (default), ease-in (ускорение к концу), ease-out (ускорение в начале) и ease-in-out (более плавное скольжение, чем ease)
 Значение linear – это прямая, остальные кривые являются короткой записью следующих cubic-bezier:
@@ -24,6 +25,7 @@ CSS animations
  Шаги можно задавать через проценты или с помощью ключевых слов from и to.
  При этом в шагах можно менять тип анимации (animation-timing-function)
 
+```css
 /* Современные браузеры, кроме Chrome, Opera, Safari */
   @keyframes go-left-right {   /* имя анимации */
     from {
@@ -58,6 +60,7 @@ CSS animations
       height: 20px;
       background: lime;
     }
+```
 
 animation
 Анимировать можно любые элементы, в том числе псевдо-элементы.

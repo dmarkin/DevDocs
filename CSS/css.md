@@ -7,12 +7,14 @@ SASS vs LESS vs Stylus - http://forwebdev.ru/css/sass-vs-less-vs-stylus/
 Selectors - http://dev.w3.org/csswg/selectors-3/#class-html
 
 Центрирование по вертикали и горизонтали
+```css
 .modal {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+```
 
 Стилизация строк таблицы
 Для строк таблицы, тегов <tr>, нельзя задать border, если не задан border-collapse: collapse; на родительском элементе <table>.
@@ -29,12 +31,13 @@ Firefox добавляет внутреннее выделение в кнопк
 Вероятно, это делается для повышения доступности, но расположение весьма странное.
 Чтобы избавиться от этого безобразия можно использовать следующий CSS:
 
+```css
 input::-moz-focus-inner,
 button::-moz-focus-inner {
     padding: 0;
     border: 0;
 }
-
+```
 
 Значение по умолчанию атрибута type для кнопки button — submit, что значит, что любая кнопка в форме может её отправить.
 Следует использовать type="button" для любых кнопок, которые этого делать не должны и явно определять type="submit" для остальных.

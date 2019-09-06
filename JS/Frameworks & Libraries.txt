@@ -32,7 +32,7 @@ http://blog.namangoel.com/browserify-vs-webpack-js-drama
 
 
 Библиотеки js:
-* ReactJS (компонент)
+* React
 Underscore.js
 lodash (fork от Underscore)
 * Modernizr - поддерживает старые браузеры

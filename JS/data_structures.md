@@ -2,8 +2,8 @@
 Массивы в JavaScript имеют встроенную реализацию стека и очереди.
 Стек хранит данные в последовательном порядке и удаляет последние добавленные данные.
 
-
-// ES6
+```ecmascript 6
+/* ES6 */
 class Stack {
     constructor () {
         this._size = 0;
@@ -29,8 +29,10 @@ class Stack {
         }
     }
 }
+```
 
-// ES5
+```js
+/* ES5 */
 function Stack() {
     this._size = 0;
     this._storage = {};
@@ -54,9 +56,12 @@ Stack.prototype.pop = function() {
         return deletedData;
     }
 };
+```
 
 Очередь также хранит данные в последовательном порядке, но удаляет самые старые элементы.
-// ES6
+
+```ecmascript 6
+/* ES6 */
 class Queue {
     constructor () {
         this._oldestIndex = 1;
@@ -87,8 +92,10 @@ class Queue {
         }
     }
 }
+```
 
-// ES5
+```js
+/* ES5 */
 function Queue() {
     this._oldestIndex = 1;
     this._newestIndex = 1;
@@ -117,6 +124,7 @@ Queue.prototype.dequeue = function() {
         return deletedData;
     }
 };
+```
 
 Односвязный список
 В информатике представляет собой структуру данных, которая содержит последовательность связанных узлов.
@@ -133,7 +141,8 @@ SinglyList
     searchNodeAt(position) - ищет в списке узел на n-ной позиции;
     remove(position) - удаляет узел из списка.
 
-// ES6
+```ecmascript 6
+/* ES6 */
 class Node {
     constructor (data) {
         this.data = data;
@@ -228,8 +237,10 @@ class SinglyList {
         return deletedNode;
     }
 }
+```
 
-// ES5
+```js
+/* ES5 */
 function Node(data) {
     this.data = data;
     this.next = null;
@@ -322,6 +333,7 @@ SinglyList.prototype.remove = function(position) {
 
     return deletedNode;
 };
+```
 
 Двусвязный список
 Двусвязный список поддерживает все возможности односвязного списка и расширяет их для обработки в двух направлениях.
@@ -342,7 +354,8 @@ DoublyList
     searchNodeAt(position) - ищет узел на n-ной позиции в списке;
     remove(position) - удаляет узел из списка.
 
-// ES6
+```ecmascript 6
+/* ES6 */
 class Node {
     constructor(value) {
         this.data = value;
@@ -447,8 +460,10 @@ class DoublyList {
         return deletedNode;
     }
 }
+```
 
-// ES5
+```js
+/* ES5 */
 function Node(value) {
     this.data = value;
     this.previous = null;
@@ -549,6 +564,7 @@ DoublyList.prototype.remove = function(position) {
 
     return message.success;
 };
+```
 
 
 Дерево
@@ -575,7 +591,8 @@ Tree
     add(data, toData, traversal) - добавляет узел к дереву;
     remove(child, parent) - удаляет узел дерева и все его дочерние узлы.
 
-// ES6 - нужно пофиксить
+```ecmascript 6
+/* ES6 - нужно пофиксить */
 class Node {
     constructor (data) {
        this.data = data;
@@ -681,10 +698,11 @@ class Tree {
 
         return childToRemove;
     };
-
 }
+```
 
-// ES5
+```js
+/* ES5 */
 function Node(data) {
     this.data = data;
     this.parent = null;
@@ -793,8 +811,11 @@ function findIndex(arr, data) {
 
     return index;
 }
+```
 
 Использование
+```js
+/* ES5 */
 var tree = new Tree('CEO');
 
 tree.add('VP of Happiness', 'CEO', tree.traverseBF);
@@ -805,3 +826,4 @@ tree.add('Manager of Puppies', 'Director of Puppies', tree.traverseBF);
 
 // and then
 tree.remove('VP of Sadness', 'CEO', tree.traverseBF);
+```

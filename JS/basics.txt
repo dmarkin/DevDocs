@@ -26,3 +26,10 @@ var source = new EventSource(src[, credentials]); // src - адрес с люб�
 
 shallow copy (поверхностная копия) - новый объект указывает на скопированный объект
 deep copy - полностью копируются все свойства и методы
+
+shallow comparison - объекты сравниваются по ссылке
+
+
+How JS works
+https://www.youtube.com/watch?v=8aGhZQkoFbQ
+http://latentflip.com/loupe

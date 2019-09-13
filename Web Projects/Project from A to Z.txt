@@ -1,4 +1,7 @@
 Процесс разработки:
+
+Styleguide
+
 1. Разворачивание проекта:
 Рабочее пространство web-dev - http://www.suneco.nl/over-suneco/blog/2014/a-step-by-step-guide-to-setting-up-webstorm-for-front-end-development.aspx
 Скаффолдинг - http://frontender.info/skaffolding-dlya-frontenderov/

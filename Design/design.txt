@@ -14,3 +14,5 @@ Retina graphics
 Translucent card design - https://byeolbit.github.io/translucent
 
 Parallax Blocks with hover animation - https://github.com/gijsroge/tilt.js
+
+Dark themes - https://www.youtube.com/watch?v=inJbZ1WFfQA

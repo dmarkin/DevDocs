@@ -54,3 +54,6 @@ props - список параметров, пришедших в компоне�
 
 https://scotch.io/tutorials/learning-react-getting-started-and-concepts
 https://habrahabr.ru/post/249279/
+
+
+Virtualize large lists with react-window - https://web.dev/virtualize-long-lists-react-window/

@@ -8,7 +8,7 @@ Google Speed - https://developers.google.com/speed/pagespeed/insights/
 - минимизация кода CSS, JS, HTML
 - предпочитать переходы анимациям (анимацию стоит применять только для свойств элемента opacity и transform)
 - ограничение использования JS библиотек и фреймворков
-- ограничение использования CSS greeds
+- ограничение использования CSS grids
 - кеширование
 
 Производительность и потребление памяти (Chrome) - chrome://memory-redirect/ or Task Manager at Chrome

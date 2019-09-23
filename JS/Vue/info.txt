@@ -1,0 +1,2 @@
+TODO Vuejs 2 Authentication Tutorial https://auth0.com/blog/vuejs2-authentication-tutorial/
+TODO Vue.js 2 + Firebase https://abraxabra.ru/blog/vue-js/vue-js-2-firebase/

@@ -4,3 +4,15 @@ https://dribbble.com/
 http://pinterest.com/
 
 Card UX - http://say-hi.me/design/kak-usovershenstvovat-ux-s-pomoshhyu-kartochnogo-dizajna.html#
+
+Material Design Lite
+https://getmdl.io/started/
+
+Retina graphics
+Способы оптимизации графики для retina-экранов - https://habrahabr.ru/post/150071/
+
+Translucent card design - https://byeolbit.github.io/translucent
+
+Parallax Blocks with hover animation - https://github.com/gijsroge/tilt.js
+
+Dark themes - https://www.youtube.com/watch?v=inJbZ1WFfQA

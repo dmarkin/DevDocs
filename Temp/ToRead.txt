@@ -1,0 +1,83 @@
+ECMA Script 6 (2015)
+http://tagtree.io/courses/expert-es6/do
+https://github.com/lukehoban/es6features
+http://caspervonb.com/javascript/overview-javascript-2015/
+https://www.parleys.com/talk/549eb4b8e4b091b604abd363/chapter4/downloads
+
+!! https://habrahabr.ru/company/ifree/blog/216045/
+
+Более 800 ресурсов для front-end-разработчиков - https://m.habrahabr.ru/company/it-grad/blog/275673/
+
+https://devdactic.com/user-auth-angularjs-ionic/
+Cheat-sheet- http://ts-soft.ru/blog/angular-cheatsheet
+Впечатление от Angular http://vas3k.ru/blog/348/
+http://www.sitepoint.com/creating-crud-app-minutes-angulars-resource/
+http://metanit.com/web/angular/
+https://makeomatic.ru/blog/2013/12/11/AngularJS_VS_jQuery/
+https://makeomatic.ru/blog/2014/04/04/Initialization_angularjs/
+https://github.com/angular/angular-seed - см. тестирование
+
+Bootstrap templates - http://postovoy.net/84.html
+
+Media Queries - https://habrahabr.ru/post/199424/
+NodeJS Video - https://www.youtube.com/watch?v=CrevZgTc7ow&list=PLsuEohlthXdkRSxJTkmTstWKHgBHsd3Dx&index=8
+
+http://jasonwatmore.com/post/2014/05/26/AngularJS-Basic-HTTP-Authentication-Example.aspx
+http://plnkr.co/edit/H4SVl6?p=preview
+http://thesassway.com/beginner/getting-started-with-sass-and-compass
+http://jordanhollinger.com/2014/01/29/css-gaussian-blur-behind-a-translucent-box/
+http://www.awwwards.com/best-websites/chocolat-milano/
+http://www.clicktorelease.com/code/css3dclouds/
+
+
+https://www.smashingmagazine.com/2013/06/workflow-design-develop-modern-portfolio-website/
+
+String:
+
+typeof variable === "string"
+
+Number:
+
+typeof variable === "number"
+
+Boolean:
+
+typeof variable === "boolean"
+
+Object:
+
+typeof variable === "object"
+
+Array:
+
+Array.isArray( arrayLikeObject )
+(где возможно)
+arrayLikeObject instanceof Array
+
+Node:
+
+elem.nodeType === 1
+
+null:
+
+variable === null
+
+null or undefined:
+
+variable == null
+
+undefined:
+
+Глобальные переменные:
+
+typeof variable === "undefined"
+
+Локальные переменные:
+
+variable === undefined
+
+Свойства:
+
+object.prop === undefined
+object.hasOwnProperty( prop )
+"prop" in object

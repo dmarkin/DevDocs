@@ -13,3 +13,21 @@
 
 Main services:
 $compile, $scope, $rootScope, $http, $resource, $interval, $timeout, $animate, $browser, $location, $log
+
+$route
+обычно используется в сочетании с директивой ngView.
+
+$q
+Если нужно выполнить код независимо от результата promise, используют finally обработчик, который вызывается всегда.
+Так же блок finally не влияет на дальнейшую обработку, так как он не меняет тип promise результата.
+$q.all следует использовать в случаях, когда необходимо синхронизировать выполнение асинхронных функций.
+$q.when своего рода прокси функция, которая принимает либо promise либо обычное значение, а возвращает всегда promise.
+
+Обработка ошибок:
+asyncFunction().then(function() {
+  return somethingElseAsync();
+}).catch(function(err) {
+  errorHandler(err);
+});
+
+Errors handling in Q library - http://bahmutov.calepin.co/error-handling-in-promises.html

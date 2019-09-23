@@ -32,7 +32,6 @@ http://ru.bem.info/ - БЭМ
 
 HTML
 http://htmlbook.ru
-http://frontender.info/a-guide-to-flexbox/#svoystva - Flexbox
 http://www.hongkiat.com/blog/rwd-tools/ - Responsive
 
 CSS
@@ -75,15 +74,7 @@ http://jlongster.com/Transducers.js--A-JavaScript-Library-for-Transformation-of-
 
 
 
-Системы контроля версий (SVN, Git, Mercury)
-Git / Github
-http://githowto.com/ru/making_changes
-https://try.github.io/levels/1/challenges/1
-https://www.youtube.com/watch?v=RiYz59qVypg
-https://www.youtube.com/watch?v=5d7OcL_bQjI
-http://habrahabr.ru/post/125799/
-http://habrahabr.ru/post/60030/
-http://habrahabr.ru/post/60347/
+
 
 IE on iOS X http://news.softpedia.com/news/How-to-Run-Internet-Explorer-on-Mac-OS-X-391323.shtml
 

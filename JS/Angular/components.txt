@@ -6,6 +6,12 @@ Translate - https://github.com/ajwhite/angular-translate-once, https://atticuswh
 Multiselect - https://github.com/isteven/angular-multi-select
 
 File Upload - https://github.com/danialfarid/ng-file-upload
+http://uncorkedstudios.com/blog/multipartformdata-file-upload-with-angularjs
+http://jsfiddle.net/1u52dxxL/
+http://stackoverflow.com/questions/18571001/file-upload-using-angularjs
+http://stackoverflow.com/questions/17063000/ng-model-for-input-type-file
+http://stackoverflow.com/questions/12979712/file-uploader-integration-for-angularjs
+http://stackoverflow.com/questions/21115771/angularjs-upload-files-using-resource-solution
 
 Interceptors - http://www.bennadel.com/blog/2777-monitoring-http-activity-with-http-interceptors-in-angularjs.htm
 

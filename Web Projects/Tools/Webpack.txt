@@ -1,0 +1,1 @@
+webpack.github.io/analyse/#chunks (#modules) - граф зависимостей

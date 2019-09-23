@@ -1,0 +1,53 @@
+CSS Working Group Editor Drafts https://drafts.csswg.org/
+CSS Working Group http://w3.org/Style/CSS/current-work
+
+Roadmaps for various platfoms:
+https://www.w3.org/2005/10/Process-20051014/tr#maturity-levels
+https://webkit.org/status/
+https://www.chromestatus.com/features
+https://developer.microsoft.com/en-us/microsoft-edge/platform/status/
+https://wiki.mozilla.org/Platform/Roadmap
+https://platform-status.mozilla.org/
+
+Drafts https://github.com/w3c/csswg-drafts
+
+- Motion Path Module https://www.w3.org/TR/motion-1/
+motion: motion-path, motion-offset, motion-rotation
+
+- object-fit/object-position
+
+- CSS cross-fade functions - https://drafts.csswg.org/css-images-3/
+
+- CSS element() function - set element as background - https://drafts.csswg.org/css-images-4/
+
+- CSS round display
+
+Detecting:
+ <link media="screen and (device-radius: 50%)">
+ and
+ @media screen and (device-radius: 50%)
+
+Обтекание границ: shape-inside: display;
+Обтекание рамки блока: border-boundary: display;
+
+ https://github.com/anawhj/jRound - polyfill
+ https://www.w3.org/TR/css-round-display-1/
+
+CSS Scroll snap points Привязка скролла
+https://github.com/ckrack/scrollsnap-polyfill
+https://github.com/ckrack/scrollsnap-polyfill
+
+CSS Variables
+https://www.w3.org/TR/css-variables/
+
+CSS custom selectors
+https://drafts.csswg.org/css-extensions/
+
+CSS Feature Queries (проверка поддержки свойств)
+https://drafts.csswg.org/css-conditional/#at-supports
+
+CSS Typographics
+https://drafts.csswg.org/css-text-4/
+https://www.w3.org/TR/CSS2/page.html#propdef-orphans
+https://drafts.csswg.org/css-regions/
+https://drafts.csswg.org/css-exclusions/

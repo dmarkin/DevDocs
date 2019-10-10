@@ -1,3 +1,7 @@
+https://github.com/trekhleb/javascript-algorithms
+https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
+
+
 Линейные структуры данных: стеки и очереди.
 Массивы в JavaScript имеют встроенную реализацию стека и очереди.
 Стек хранит данные в последовательном порядке и удаляет последние добавленные данные.
@@ -309,7 +313,7 @@ SinglyList.prototype.remove = function(position) {
         throw new Error(message.failure);
     }
 
-    // 2-ой случай: первый узел удален
+    // 2-ой случай: удаляем первый узел
     if (position === 1) {
         this.head = currentNode.next;
         deletedNode = currentNode;
@@ -319,7 +323,7 @@ SinglyList.prototype.remove = function(position) {
         return deletedNode;
     }
 
-    // 3-ий: все прочие узлы удалены
+    // 3-ий: удаляем любой другой узел
     while (count < position) {
         beforeNodeToDelete = currentNode;
         nodeToDelete = currentNode.next;
@@ -412,6 +416,7 @@ class DoublyList {
             count = 1,
             message = {failure: 'Failure: non-existent node in this list.'},
             beforeNodeToDelete = null,
+            afterNodeToDelete = null,
             nodeToDelete = null,
             deletedNode = null;
 
@@ -519,6 +524,7 @@ DoublyList.prototype.remove = function(position) {
         count = 1,
         message = {failure: 'Failure: non-existent node in this list.'},
         beforeNodeToDelete = null,
+        afterNodeToDelete = null,
         nodeToDelete = null,
         deletedNode = null;
 
@@ -566,6 +572,13 @@ DoublyList.prototype.remove = function(position) {
 };
 ```
 
+Хэш-таблица
+Мэппинг ключей к значениям происходит благодаря использованию хэш-функции.
+
+Куча (Heap)
+Специализированная структура данных типа дерево, которая удовлетворяет свойству кучи: если B является узлом-потомком
+узла A, то ключ(A) ≥ ключ(B). Куча является максимально эффективной реализацией абстрактного типа данных, который
+называется очередью с приоритетом.
 
 Дерево
 В информатике дерево представляет собой структуру, которая задает иерархические данные с узлами.
@@ -620,7 +633,7 @@ class Tree {
         // use class Queue - see above
         let queue = new Queue();
         queue.enqueue(this._root);
-        currentTree = queue.dequeue();
+        let currentTree = queue.dequeue();
 
         while (currentTree) {
             for (let i = 0, length = currentTree.children.length; i < length; i++) {
@@ -660,8 +673,7 @@ class Tree {
     }
 
     remove(data, fromData, traversal) {
-        let tree = this,
-            parent = null,
+        let parent = null,
             childToRemove = null,
             index,
             callback = function(node) {
@@ -710,12 +722,10 @@ function Node(data) {
 }
 
 function Tree(data) {
-    var node = new Node(data);
-    this._root = node;
+    this._root = new Node(data);
 }
 
 Tree.prototype.traverseDF = function(callback) {
-    // это рекурсивная и мгновенно вызываемая функция
     (function recurse(currentNode) {
         // шаг 2
         for (var i = 0, length = currentNode.children.length; i < length; i++) {
@@ -736,7 +746,7 @@ Tree.prototype.traverseBF = function(callback) {
 
     queue.enqueue(this._root);
 
-    currentTree = queue.dequeue();
+    var currentTree = queue.dequeue();
 
     while(currentTree){
         for (var i = 0, length = currentTree.children.length; i < length; i++) {
@@ -772,8 +782,7 @@ Tree.prototype.add = function(data, toData, traversal) {
 };
 
 Tree.prototype.remove = function(data, fromData, traversal) {
-    var tree = this,
-        parent = null,
+    var parent = null,
         childToRemove = null,
         index;
 
@@ -827,3 +836,5 @@ tree.add('Manager of Puppies', 'Director of Puppies', tree.traverseBF);
 // and then
 tree.remove('VP of Sadness', 'CEO', tree.traverseBF);
 ```
+
+Очередь с приоритетом (priority queue)

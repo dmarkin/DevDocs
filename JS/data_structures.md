@@ -1,6 +1,6 @@
 https://github.com/trekhleb/javascript-algorithms
 https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
-
+https://dou.ua/lenta/articles/algorithms-and-structures/
 
 Линейные структуры данных: стеки и очереди.
 Массивы в JavaScript имеют встроенную реализацию стека и очереди.

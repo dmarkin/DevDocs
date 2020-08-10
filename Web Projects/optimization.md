@@ -1,6 +1,9 @@
 Николас Закас JS Оптимизация производительности [O'Raily]
 
+RAIL Model (Response, Animation, Idle, Load) - https://developers.google.com/web/fundamentals/performance/rail
 Google Speed - https://developers.google.com/speed/pagespeed/insights/
+WebPage Test - https://www.webpagetest.org/
+Chrome User Experience Report (Real User Monitoring (RUM) tool) - https://developers.google.com/web/tools/chrome-user-experience-report/
 
 Повышение эффективности
 - использование спрайтов

@@ -3,3 +3,6 @@ https://colorlib.com/wp/angularjs-admin-templates/
 
 Flat UI Free - Design Framework
 https://github.com/designmodo/Flat-UI
+
+Diagrams
+drawio

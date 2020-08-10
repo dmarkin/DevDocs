@@ -4,6 +4,7 @@ https://skyfonts.com/
 Helvetica, Arial (наиболее распространенные)
 BaskervilleMTStd-Regular
 Cardo
+Font Awesome
 font: 400 2em / 1.5em 'Cardo', serif;
 https://fonts.gstatic.com/s/cardo/v8/f9GbO0_LnwwuaRC6yAh0JKCWcynf_cDxXwCLxiixG1c.woff2
 

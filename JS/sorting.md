@@ -59,24 +59,21 @@ function SelectionSort(A) {
 их следования во входном массиве (как в примере ниже):
 
 ``` js
-function InsertionSort(A) {
-    if (A.length <= 1) return A;
-    let n = A.length, i;
-    for (i = 0; i < n; i++) {
-     let v = A[i],
-          j = i - 1;
-
-       while (j >= 0 && A[j] > v) {
-        A[j + 1] = A[j];
-        j--;
-       }
-      }
-      A[j + 1] = v;
-     }
-    return A;
+function InsertionSort(array) {
+  const length = array.length;
+  if (length <= 1) return array;
+  for (let i = 1; i < length; i++) {
+    const current = array[i];
+    let j = i;
+    while (j > 0 && array[j - 1] > current) {
+      array[j] = array[j - 1];
+      j--;
+    }
+    array[j] = current;
+  }
+  return array; // или {...array} - чтобы не мутировать входящий массив
 }
 ```
-
 
 4. Сортировка Шелла
 
@@ -209,16 +206,26 @@ function HeapSort(A) {
 ```
 
 9. Быстрая сортировка
+Quicksort, как правило, считается самой эффективной и быстрой и поэтому используется в V8 как реализация
+Array.prototype.sort() для массивов с более чем 23 элементами. Для менее чем 23 элемента в V8 используется insertion sort2.
+Merge sort - конкурент quicksort, аналогично ему он также эффективный и быстрый, но имеет дополнительное преимущество -
+устойчивость. Поэтому Mozilla и Safari используют его для имплементации Array.prototype.sort().
 
 ``` js
-function QuickSort(A) {
-    if (A.length <= 1) return A;
-    let a = [], b = [], p = A[0], i;
-    for (i = 1; i < A.length; i++)
-     { if (A[i] < p) a[a.length] = A[i];
-       else b[b.length] = A[i];
-     }
-    return QuickSort(a).concat(p, QuickSort(b));
+function QuickSort(array) {
+  if (array.length <= 1) return array;
+  let a = [];
+  let b = [];
+  let pivot = array[0]; // указатель
+  for (let i = 1; i < array.length; i++) {
+    if (array[i] < pivot) {
+      a[a.length] = array[i];
+    } else {
+      b[b.length] = array[i];
+    }
+    console.log(a, b)
+  }
+  return QuickSort(a).concat(pivot, QuickSort(b));
 }
 ```
 

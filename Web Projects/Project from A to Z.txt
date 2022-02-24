@@ -113,15 +113,6 @@ https://www.filamentgroup.com/code/ - библиотеки для адаптир
 6. Генерация документации https://github.com/jsdoc3/jsdoc
 
 7. Code review. Тестирование QA
-Checklist for code review:
-Function: does it do what it needs to do? (A good spec goes a long way here)
-Bugs
-Test coverage
-Adherence (commitment) to architecture and patterns
-Duplicate code
-Code style and formatting
-
-About code review - https://www.kenneth-truyers.net/2016/04/08/code-reviews-why-and-how/
 
 8. Хостинг
 

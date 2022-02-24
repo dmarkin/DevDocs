@@ -1,3 +1,6 @@
+*UX Guide: как избежать юзабилити-ошибок в продукте - https://dou.ua/lenta/articles/ux-guide/
+About Disabled buttons - https://axesslab.com/disabled-buttons-suck/
+
 10 инструментов для создания инфографики и визуализации данных
 
 1. http://piktochart.com/
